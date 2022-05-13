@@ -30,12 +30,16 @@ struct BeiJingView: View {
           Text("北京，是一座朴实亲切而又大气磅礴的城市既能海纳百川，又有着自己独特的风姿，既能独树一帜，又不孤芳自赏。")
             .lineLimit(nil)
             .font(.headline)
+            // 前面的覆盖后面属性 ❓逆序， 先进后出，栈
             .foregroundColor(Color("ColorBrown"))
+            .foregroundColor(Color.green)
+            // 前面的覆盖后面属性 ❓逆序， 先进后出，栈
             .multilineTextAlignment(.center)
+            .multilineTextAlignment(.leading)
             .lineSpacing(8)
-            .padding(.horizontal, 20)
             // .frame(minWidth: 640,  minHeight: 120)
             .frame(maxWidth: 640, minHeight: 120)
+            .padding(.horizontal, 20)
         }
         .padding()
         Spacer()
