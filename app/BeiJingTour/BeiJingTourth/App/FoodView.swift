@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct FoodView: View {
     var body: some View {
-        Text("北京旅游 App")
+        Text("Food 🍜")
         .padding()
-        .foregroundColor(.pink)
+        .foregroundColor(.accentColor)
     }
 }
 
 // preview
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        FoodView()
     }
 }

@@ -11,7 +11,8 @@ import SwiftUI
 struct BeiJingTourthApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          // 视图入口
+          AppView()
         }
     }
 }
