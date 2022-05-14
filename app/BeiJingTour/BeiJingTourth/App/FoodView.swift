@@ -22,6 +22,7 @@ struct FoodView: View {
   let headers: [HeaderModel] = HeadersData;
   let leftsData: [LeftModel] = LeftData;
   let rightsData: [RightModel] = RightData;
+  let foodCardData: [FoodCardModel] = FoodCardData;
   let titleModifier: TitleModifier = TitleModifier();
   var body: some View {
     ScrollView(.vertical, showsIndicators: false) {
@@ -48,8 +49,13 @@ struct FoodView: View {
       Text("特色北京小吃")
         .fontWeight(.bold)
         .modifier(TitleModifier())
-      // ScrollView(.horizontal, showsIndicators: false) {}
-      // TODO: 2
+       ScrollView(.horizontal, showsIndicators: false) {
+         HStack(alignment: .top, spacing: 60) {
+           ForEach(foodCardData) { item in
+             FoodCardView(foodCard: item);
+           }
+         }
+       }
       Text("特色小吃店")
         .fontWeight(.bold)
         .modifier(TitleModifier())
