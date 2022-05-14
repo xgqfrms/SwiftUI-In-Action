@@ -76,6 +76,10 @@ struct BeiJingView: View {
 
 struct BeiJingView_Previews: PreviewProvider {
     static var previews: some View {
-        BeiJingView()
+        // BeiJingView()
+        Group {
+          BeiJingView().preferredColorScheme(.light).previewInterfaceOrientation(.portraitUpsideDown)
+          BeiJingView().preferredColorScheme(.dark).previewInterfaceOrientation(.portraitUpsideDown)
+        }
     }
 }
