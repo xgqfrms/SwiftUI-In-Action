@@ -37,9 +37,7 @@ struct TableView: View {
     }
     // 插图标注样式字体
     .font(.callout)
-    // .foregroundColor(Color.gray)
-    .foregroundColor(.green)
-    .background(.white)
+    .foregroundColor(Color.gray)
     .padding(.horizontal)
     .frame(maxHeight: 220)
   }
