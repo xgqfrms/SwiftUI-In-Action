@@ -29,6 +29,11 @@
 		70CBF241282FD85E001DC3E0 /* FoodCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CBF240282FD85E001DC3E0 /* FoodCardView.swift */; };
 		70CBF243282FDF4F001DC3E0 /* FoodCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CBF242282FDF4F001DC3E0 /* FoodCardData.swift */; };
 		70CBF245282FDF72001DC3E0 /* FoodCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CBF244282FDF71001DC3E0 /* FoodCardModel.swift */; };
+		70CBF247282FF9F1001DC3E0 /* SnackBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CBF246282FF9F1001DC3E0 /* SnackBarView.swift */; };
+		70CBF249282FFA03001DC3E0 /* SnackBarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CBF248282FFA03001DC3E0 /* SnackBarData.swift */; };
+		70CBF24B282FFA11001DC3E0 /* SnackBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CBF24A282FFA11001DC3E0 /* SnackBarModel.swift */; };
+		70CBF24D283011E7001DC3E0 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CBF24C283011E7001DC3E0 /* StarRatingView.swift */; };
+		70CBF24F28301387001DC3E0 /* SnackInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CBF24E28301387001DC3E0 /* SnackInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +60,11 @@
 		70CBF240282FD85E001DC3E0 /* FoodCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCardView.swift; sourceTree = "<group>"; };
 		70CBF242282FDF4F001DC3E0 /* FoodCardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCardData.swift; sourceTree = "<group>"; };
 		70CBF244282FDF71001DC3E0 /* FoodCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCardModel.swift; sourceTree = "<group>"; };
+		70CBF246282FF9F1001DC3E0 /* SnackBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarView.swift; sourceTree = "<group>"; };
+		70CBF248282FFA03001DC3E0 /* SnackBarData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarData.swift; sourceTree = "<group>"; };
+		70CBF24A282FFA11001DC3E0 /* SnackBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarModel.swift; sourceTree = "<group>"; };
+		70CBF24C283011E7001DC3E0 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
+		70CBF24E28301387001DC3E0 /* SnackInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +136,7 @@
 				70CBF242282FDF4F001DC3E0 /* FoodCardData.swift */,
 				70CBF238282F6A86001DC3E0 /* LeftData.swift */,
 				70CBF23A282F6ACD001DC3E0 /* RightData.swift */,
+				70CBF248282FFA03001DC3E0 /* SnackBarData.swift */,
 			);
 			path = Datas;
 			sourceTree = "<group>";
@@ -138,6 +149,9 @@
 				70CBF23C282F6B18001DC3E0 /* LeftView.swift */,
 				70CBF23E282F6B2B001DC3E0 /* RightView.swift */,
 				70CBF240282FD85E001DC3E0 /* FoodCardView.swift */,
+				70CBF246282FF9F1001DC3E0 /* SnackBarView.swift */,
+				70CBF24C283011E7001DC3E0 /* StarRatingView.swift */,
+				70CBF24E28301387001DC3E0 /* SnackInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,6 +162,7 @@
 				70CBF22E282F5B79001DC3E0 /* HeaderModel.swift */,
 				70CBF234282F6A2F001DC3E0 /* LeftModel.swift */,
 				70CBF244282FDF71001DC3E0 /* FoodCardModel.swift */,
+				70CBF24A282FFA11001DC3E0 /* SnackBarModel.swift */,
 				70CBF236282F6A45001DC3E0 /* RightModel.swift */,
 			);
 			path = Models;
@@ -226,20 +241,25 @@
 			files = (
 				70B1281A282CA5AF000716FC /* FoodView.swift in Sources */,
 				70CBF241282FD85E001DC3E0 /* FoodCardView.swift in Sources */,
+				70CBF249282FFA03001DC3E0 /* SnackBarData.swift in Sources */,
 				70CBF245282FDF72001DC3E0 /* FoodCardModel.swift in Sources */,
 				70CBF233282F6404001DC3E0 /* TableView.swift in Sources */,
 				70CBF22B282E2B84001DC3E0 /* BeiJingView.swift in Sources */,
+				70CBF247282FF9F1001DC3E0 /* SnackBarView.swift in Sources */,
 				70CBF23F282F6B2B001DC3E0 /* RightView.swift in Sources */,
+				70CBF24D283011E7001DC3E0 /* StarRatingView.swift in Sources */,
 				70CBF231282F5C6B001DC3E0 /* Headers.swift in Sources */,
 				70CBF239282F6A86001DC3E0 /* LeftData.swift in Sources */,
 				70CBF235282F6A2F001DC3E0 /* LeftModel.swift in Sources */,
 				70CBF227282E2B49001DC3E0 /* SettingView.swift in Sources */,
+				70CBF24F28301387001DC3E0 /* SnackInfoView.swift in Sources */,
 				70B12818282CA5AF000716FC /* BeiJingTourthApp.swift in Sources */,
 				70CBF23D282F6B18001DC3E0 /* LeftView.swift in Sources */,
 				70CBF23B282F6ACD001DC3E0 /* RightData.swift in Sources */,
 				70CBF229282E2B67001DC3E0 /* HuTongView.swift in Sources */,
 				70CBF225282E2AF4001DC3E0 /* AppView.swift in Sources */,
 				70CBF22F282F5B79001DC3E0 /* HeaderModel.swift in Sources */,
+				70CBF24B282FFA11001DC3E0 /* SnackBarModel.swift in Sources */,
 				70CBF243282FDF4F001DC3E0 /* FoodCardData.swift in Sources */,
 				70CBF22D282E9B92001DC3E0 /* HeaderView.swift in Sources */,
 				70CBF237282F6A45001DC3E0 /* RightModel.swift in Sources */,

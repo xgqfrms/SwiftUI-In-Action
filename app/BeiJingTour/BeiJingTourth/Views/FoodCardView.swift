@@ -37,7 +37,7 @@ struct FoodCardView: View {
          // 圆环
         .background(Circle().fill(.white)).frame(width: 74, height: 74, alignment: .center)
         .background(Circle().fill(lineGradient)).frame(width: 82, height: 82, alignment: .center)
-        .background(Circle().fill(Color("ColorAppearanceAdaptive"))).frame(width: 90, height: 90, alignment: .center)
+        .background(Circle().fill(Color("ColorAuto"))).frame(width: 90, height: 90, alignment: .center)
         .offset(x: -150)
     }
     .padding(.leading, 50)

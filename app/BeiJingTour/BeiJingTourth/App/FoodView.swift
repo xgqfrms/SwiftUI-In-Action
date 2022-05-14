@@ -23,6 +23,7 @@ struct FoodView: View {
   let leftsData: [LeftModel] = LeftData;
   let rightsData: [RightModel] = RightData;
   let foodCardData: [FoodCardModel] = FoodCardData;
+  let snackBarData: [SnackBarModel] = SnackBarData;
   let titleModifier: TitleModifier = TitleModifier();
   var body: some View {
     ScrollView(.vertical, showsIndicators: false) {
@@ -45,21 +46,26 @@ struct FoodView: View {
         .background(.white)
         //.background(Color("ColorBrownAdaptive"))
         .frame(maxWidth: 640);
-      // TODO: 1
+      // FoodCard
       Text("特色北京小吃")
         .fontWeight(.bold)
         .modifier(TitleModifier())
-       ScrollView(.horizontal, showsIndicators: false) {
-         HStack(alignment: .top, spacing: 60) {
-           ForEach(foodCardData) { item in
-             FoodCardView(foodCard: item);
-           }
-         }
-       }
+      ScrollView(.horizontal, showsIndicators: false) {
+        HStack(alignment: .top, spacing: 60) {
+          ForEach(foodCardData) { item in
+            FoodCardView(foodCard: item);
+          }
+        }
+      }
+      // SnackBar
       Text("特色小吃店")
         .fontWeight(.bold)
         .modifier(TitleModifier())
-      // VStack(alignment: .center, spacing: 20) {}
+      VStack(alignment: .center, spacing: 20) {
+         ForEach(snackBarData) { item in
+           SnackBarView(snackBar: item);
+         }
+      }
       // Footer
       VStack (alignment: .center, spacing: 20) {
         Text("关于北京的小吃")
