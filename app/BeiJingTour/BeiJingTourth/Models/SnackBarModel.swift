@@ -16,6 +16,6 @@ struct SnackBarModel: Identifiable {
   var serves: Int;
   var preparation: Int;
   var hot: Int;
-  var intros: [String];
+  var infos: [String];
   var methods: [String];
 }

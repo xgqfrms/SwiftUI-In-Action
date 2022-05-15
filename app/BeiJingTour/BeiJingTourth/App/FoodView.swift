@@ -66,6 +66,8 @@ struct FoodView: View {
            SnackBarView(snackBar: item);
          }
       }
+      .frame(maxWidth: 640)
+      .padding(.horizontal)
       // Footer
       VStack (alignment: .center, spacing: 20) {
         Text("关于北京的小吃")
@@ -75,7 +77,8 @@ struct FoodView: View {
           .padding(8);
         Text("北京小吃，历史悠久，技艺精湛，品种繁多。荟萃我国大江南北、长城内外的风味。愿《北京旅游》App能拓宽您的视野，丰富您的生活！")
           .font(.system(.body, design: .serif))
-          .multilineTextAlignment(.center)
+          .multilineTextAlignment(.leading)
+          // .multilineTextAlignment(.center)
           .foregroundColor(Color.gray)
           .frame(minHeight: 60);
       }

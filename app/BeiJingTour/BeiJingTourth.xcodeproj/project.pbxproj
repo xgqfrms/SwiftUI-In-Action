@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		707A988F2830FC2E00E51BFF /* SnackDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A988E2830FC2E00E51BFF /* SnackDetailView.swift */; };
 		70B12818282CA5AF000716FC /* BeiJingTourthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B12817282CA5AF000716FC /* BeiJingTourthApp.swift */; };
 		70B1281A282CA5AF000716FC /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B12819282CA5AF000716FC /* FoodView.swift */; };
 		70B1281C282CA5B1000716FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70B1281B282CA5B1000716FC /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		707A988E2830FC2E00E51BFF /* SnackDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackDetailView.swift; sourceTree = "<group>"; };
 		70B12814282CA5AF000716FC /* 北京旅游.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "北京旅游.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B12817282CA5AF000716FC /* BeiJingTourthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeiJingTourthApp.swift; sourceTree = "<group>"; };
 		70B12819282CA5AF000716FC /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				70CBF23E282F6B2B001DC3E0 /* RightView.swift */,
 				70CBF240282FD85E001DC3E0 /* FoodCardView.swift */,
 				70CBF246282FF9F1001DC3E0 /* SnackBarView.swift */,
+				707A988E2830FC2E00E51BFF /* SnackDetailView.swift */,
 				70CBF24C283011E7001DC3E0 /* StarRatingView.swift */,
 				70CBF24E28301387001DC3E0 /* SnackInfoView.swift */,
 			);
@@ -260,6 +263,7 @@
 				70CBF225282E2AF4001DC3E0 /* AppView.swift in Sources */,
 				70CBF22F282F5B79001DC3E0 /* HeaderModel.swift in Sources */,
 				70CBF24B282FFA11001DC3E0 /* SnackBarModel.swift in Sources */,
+				707A988F2830FC2E00E51BFF /* SnackDetailView.swift in Sources */,
 				70CBF243282FDF4F001DC3E0 /* FoodCardData.swift in Sources */,
 				70CBF22D282E9B92001DC3E0 /* HeaderView.swift in Sources */,
 				70CBF237282F6A45001DC3E0 /* RightModel.swift in Sources */,

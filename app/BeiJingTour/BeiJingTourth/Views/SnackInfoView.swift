@@ -16,7 +16,7 @@ struct SnackInfoView: View {
   var body: some View {
     HStack(alignment: .center, spacing: 12) {
       HStack(alignment: .center, spacing: 2) {
-        Image(systemName: "person 3")
+        Image(systemName: "person.3")
         Text("可用餐人数: \(snackBar.serves)")
       }
       HStack(alignment: .center, spacing: 2) {
