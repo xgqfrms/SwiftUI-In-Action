@@ -39,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		707A988E2830FC2E00E51BFF /* SnackDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackDetailView.swift; sourceTree = "<group>"; };
+		707A989028314C6800E51BFF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		70B12814282CA5AF000716FC /* 北京旅游.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "北京旅游.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B12817282CA5AF000716FC /* BeiJingTourthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeiJingTourthApp.swift; sourceTree = "<group>"; };
 		70B12819282CA5AF000716FC /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 		70B12816282CA5AF000716FC /* BeiJingTourth */ = {
 			isa = PBXGroup;
 			children = (
+				707A989028314C6800E51BFF /* README.md */,
 				70CBF220282E2374001DC3E0 /* App */,
 				70CBF222282E23DE001DC3E0 /* Views */,
 				70CBF221282E23CA001DC3E0 /* Datas */,
