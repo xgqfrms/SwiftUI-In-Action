@@ -11,7 +11,8 @@ https://developer.apple.com/sf-symbols/release-notes/
 ## Architecture
 
 ```sh
-➜  BeiJingTour git:(main) ✗ tree -L 3
+# ➜  BeiJingTour git:(main)
+$ tree -L 3
 .
 ├── BeiJingTourth
 │   ├── App
@@ -37,6 +38,7 @@ https://developer.apple.com/sf-symbols/release-notes/
 │   ├── Datas
 │   │   ├── FoodCardData.swift
 │   │   ├── Headers.swift
+│   │   ├── HutongData.swift
 │   │   ├── LeftData.swift
 │   │   ├── RightData.swift
 │   │   └── SnackBarData.swift
@@ -45,6 +47,7 @@ https://developer.apple.com/sf-symbols/release-notes/
 │   ├── Models
 │   │   ├── FoodCardModel.swift
 │   │   ├── HeaderModel.swift
+│   │   ├── HutongModel.swift
 │   │   ├── LeftModel.swift
 │   │   ├── RightModel.swift
 │   │   └── SnackBarModel.swift
@@ -53,8 +56,10 @@ https://developer.apple.com/sf-symbols/release-notes/
 │   └── Views
 │       ├── FoodCardView.swift
 │       ├── HeaderView.swift
+│       ├── HutongRanking.swift
 │       ├── LeftView.swift
 │       ├── RightView.swift
+│       ├── SettingForm.swift
 │       ├── SnackBarView.swift
 │       ├── SnackDetailView.swift
 │       ├── SnackInfoView.swift
@@ -70,6 +75,6 @@ https://developer.apple.com/sf-symbols/release-notes/
 │       └── xgqfrms-mbp.xcuserdatad
 └── README.md
 
-25 directories, 31 files
+25 directories, 35 files
 
 ```
