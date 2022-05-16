@@ -83,7 +83,16 @@ struct HutongRanking: View {
       .cornerRadius(20)
     }
     .onAppear() {
-      self.animate.toggle();
+      /*
+       */
+      self.animate = false;
+      DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        // ✅
+        self.animate = true;
+        // self.animate.toggle();
+        // print("Async after 1 seconds");
+      }
+      // self.animate.toggle();
       // self.animate = false;
       // sleep(UInt32(1.0));
       // self.animate = true;
@@ -99,7 +108,7 @@ struct HutongRanking: View {
     }
     .onDisappear() {
       // self.animate.toggle();
-       // self.animate = false;
+      // self.animate = false;
     }
 //    .onAppear() {
 //      // self.animate.toggle();
