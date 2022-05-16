@@ -10,16 +10,17 @@ import SwiftUI
 struct HuTongView: View {
   let hutongs: [HutongModel] = HutongData;
   var body: some View {
-    ScrollView(.vertical, showsIndicators: false) {
+    ScrollView(.horizontal, showsIndicators: false) {
       VStack() {
         Spacer();
         HStack(alignment: .center, spacing: 25) {
           /*
-           ForEach(hutongs) { item in
-           // HutongRanking(hutong: item);
-           HutongRanking(item);
-           }
-           */
+          ForEach(hutongs) { item in
+             // HutongRanking(hutong: item);
+             HutongRanking(item);
+          }
+          */
+          // custom item name
           ForEach(hutongs) { hutong in
             HutongRanking(hutong);
           }

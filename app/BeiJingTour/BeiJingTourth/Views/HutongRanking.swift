@@ -10,11 +10,20 @@ import SwiftUI
 struct HutongRanking: View {
   @State private var animate: Bool = false;
   var hutong: HutongModel;
+//  init(_ ht: HutongModel) {
+//    self.hutong = ht;
+//  }
+  // 形参与实参可以同名
   init(_ hutong: HutongModel) {
     self.hutong = hutong;
   }
+  let lineGradient: LinearGradient = LinearGradient(
+    gradient: Gradient(colors: [Color("ColorBrownLight"), Color("ColorBrownMedium")]),
+    startPoint: .top,
+    endPoint: .bottom
+  );
   var body: some View {
-    VStack() {
+    VStack {
       // Logo
       Image(hutong.image)
         .resizable()
@@ -48,19 +57,25 @@ struct HutongRanking: View {
           Text(hutong.ranking)
             .font(.system(.largeTitle, design: .serif))
             .fontWeight(.bold)
-            padding()
+            // padding()
           Text("胡同评分")
             .font(.system(.body, design: .serif))
             .fontWeight(.heavy)
         }
+        .foregroundColor(Color("ColorBrownMedium"))
+        .padding(.top, 65)
+        .frame(width: 180)
       }
       .zIndex(0)
       .multilineTextAlignment(.center)
       .padding(.horizontal)
-      //
+      .frame(width: 260, height: 485, alignment: .center)
+      // .background(LinearGradient(gradient: Gradient(colors: [Color("ColorBrownLight"), Color("ColorBrownMedium")]), startPoint: .top, endPoint: .bottom))
+      .background(lineGradient)
+      .cornerRadius(20)
     }
     .onAppear() {
-      self.animate.toggle();
+       self.animate.toggle();
     }
   }
 }
