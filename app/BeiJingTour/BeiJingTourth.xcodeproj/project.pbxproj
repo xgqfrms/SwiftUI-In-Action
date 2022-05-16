@@ -11,6 +11,7 @@
 		707A989228321DDD00E51BFF /* HutongRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A989128321DDD00E51BFF /* HutongRanking.swift */; };
 		707A989428321DF900E51BFF /* HutongData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A989328321DF900E51BFF /* HutongData.swift */; };
 		707A989628321E3100E51BFF /* HutongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A989528321E3100E51BFF /* HutongModel.swift */; };
+		707A98982832884F00E51BFF /* SettingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98972832884F00E51BFF /* SettingForm.swift */; };
 		70B12818282CA5AF000716FC /* BeiJingTourthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B12817282CA5AF000716FC /* BeiJingTourthApp.swift */; };
 		70B1281A282CA5AF000716FC /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B12819282CA5AF000716FC /* FoodView.swift */; };
 		70B1281C282CA5B1000716FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70B1281B282CA5B1000716FC /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		707A989128321DDD00E51BFF /* HutongRanking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HutongRanking.swift; sourceTree = "<group>"; };
 		707A989328321DF900E51BFF /* HutongData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HutongData.swift; sourceTree = "<group>"; };
 		707A989528321E3100E51BFF /* HutongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HutongModel.swift; sourceTree = "<group>"; };
+		707A98972832884F00E51BFF /* SettingForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingForm.swift; sourceTree = "<group>"; };
 		70B12814282CA5AF000716FC /* 北京旅游.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "北京旅游.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B12817282CA5AF000716FC /* BeiJingTourthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeiJingTourthApp.swift; sourceTree = "<group>"; };
 		70B12819282CA5AF000716FC /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				70CBF24C283011E7001DC3E0 /* StarRatingView.swift */,
 				70CBF24E28301387001DC3E0 /* SnackInfoView.swift */,
 				707A989128321DDD00E51BFF /* HutongRanking.swift */,
+				707A98972832884F00E51BFF /* SettingForm.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70B1281A282CA5AF000716FC /* FoodView.swift in Sources */,
+				707A98982832884F00E51BFF /* SettingForm.swift in Sources */,
 				70CBF241282FD85E001DC3E0 /* FoodCardView.swift in Sources */,
 				70CBF249282FFA03001DC3E0 /* SnackBarData.swift in Sources */,
 				70CBF245282FDF72001DC3E0 /* FoodCardModel.swift in Sources */,

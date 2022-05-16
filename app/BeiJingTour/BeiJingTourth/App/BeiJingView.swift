@@ -18,7 +18,7 @@ struct BeiJingView: View {
     @State private var animation = false;
     // var animationState = animation ? 1.0 : 0.7;
     // Cannot use instance member 'animation' within property initializer; property initializers run before 'self' is available
-  func getAnimationState (_ animation: Bool) -> Double {
+    func getAnimationState (_ animation: Bool) -> Double {
       return animation ? 1.0 : 0.7;
     }
     var body: some View {
