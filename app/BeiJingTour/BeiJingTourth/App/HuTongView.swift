@@ -20,7 +20,7 @@ struct HuTongView: View {
              HutongRanking(item);
           }
           */
-          // custom item name
+          // custom item name ✅ hutong
           ForEach(hutongs) { hutong in
             HutongRanking(hutong);
           }

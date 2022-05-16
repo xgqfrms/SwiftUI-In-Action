@@ -16,12 +16,18 @@ struct HutongRanking: View {
   // 形参与实参可以同名
   init(_ hutong: HutongModel) {
     self.hutong = hutong;
+    // self.animate = false;
   }
   let lineGradient: LinearGradient = LinearGradient(
     gradient: Gradient(colors: [Color("ColorBrownLight"), Color("ColorBrownMedium")]),
     startPoint: .top,
     endPoint: .bottom
   );
+  private func delay() async {
+    // Delay of 1.0 seconds (1 second = 1_000_000_000 nanoseconds)
+    try? await Task.sleep(nanoseconds: 1_000_000_000)
+    self.animate = true;
+  }
   var body: some View {
     VStack {
       // Logo
@@ -41,6 +47,7 @@ struct HutongRanking: View {
         )
         // mulit background Group ???
         .zIndex(1)
+        .animation(Animation.easeInOut(duration: 1), value: UUID())
         .offset(y: animate ? 55 : -55)
       // Card
       VStack(alignment: .center, spacing: 10) {
@@ -57,7 +64,8 @@ struct HutongRanking: View {
           Text(hutong.ranking)
             .font(.system(.largeTitle, design: .serif))
             .fontWeight(.bold)
-            // padding()
+            // .padding() ✅
+            // padding() ❌ Thread 1: EXC_BAD_ACCESS (code=2, address=0x7ff7bd7f8ff8)
           Text("胡同评分")
             .font(.system(.body, design: .serif))
             .fontWeight(.heavy)
@@ -75,8 +83,32 @@ struct HutongRanking: View {
       .cornerRadius(20)
     }
     .onAppear() {
-       self.animate.toggle();
+      self.animate.toggle();
+      // self.animate = false;
+      // sleep(UInt32(1.0));
+      // self.animate = true;
+      // sleep(1.0);
+      // Cannot convert value of type 'Double' to expected argument type 'UInt32'
+      // Replace '1.0' with 'UInt32(1.0)'
+      // delay
+      // Text("").task(self.delay);
+      // Converting non-sendable function value to '@Sendable () async -> Void' may introduce data races
+      // Result of call to 'task(priority:_:)' is unused
+      // self.delay();
+      // ❌ 'async' call in a function that does not support concurrency
     }
+    .onDisappear() {
+      // self.animate.toggle();
+       // self.animate = false;
+    }
+//    .onAppear() {
+//      // self.animate.toggle();
+//      self.animate = true;
+//    }
+//    .onDisappear() {
+//      // self.animate.toggle();
+//      self.animate = false;
+//    }
   }
 }
 
