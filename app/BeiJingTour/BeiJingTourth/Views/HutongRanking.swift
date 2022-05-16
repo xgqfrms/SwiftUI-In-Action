@@ -73,6 +73,65 @@ struct HutongRanking: View {
         .foregroundColor(Color("ColorBrownMedium"))
         .padding(.top, 65)
         .frame(width: 180)
+        //
+        Text(hutong.title)
+          .font(.system(.title, design: .serif))
+          .fontWeight(.bold)
+          .foregroundColor(Color("ColorBrownMedium"))
+          .padding(.vertical, 12)
+          .padding(.horizontal, 0)
+          .frame(width: 220)
+          .background(
+            RoundedRectangle(cornerRadius: 12)
+              .fill(LinearGradient(
+                gradient: Gradient(colors: [.white, Color("ColorBrownLight")]),
+                startPoint: .top,
+                endPoint: .bottom
+              ))
+              .shadow(color: Color("ColorLight"), radius: 6, x: 0, y: 6)
+          )
+        Spacer();
+//        Text(hutong.desc)
+//          .fontWeight(.bold)
+//          // .foregroundColor(.white)
+//          .foregroundColor(.green)
+//          // .lineLimit(nil)
+//          .frame(width: 220, alignment: .leading)
+        HStack(alignment: .firstTextBaseline, spacing: 0) {
+          Text(hutong.desc)
+            .fontWeight(.bold)
+            // .foregroundColor(.white)
+            .foregroundColor(.green)
+            .lineLimit(nil)
+            .frame(width: 220)
+        }
+        Spacer();
+        Text(hutong.times)
+          .font(.system(.callout, design: .serif))
+          .fontWeight(.bold)
+          .foregroundColor(.white)
+          .shadow(radius: 3)
+          .padding(.vertical)
+          .padding(.horizontal, 0)
+          .frame(width: 185)
+          .background(
+            RoundedRectangle(cornerRadius: 12)
+              .fill(LinearGradient(
+                gradient: Gradient(colors: [Color("ColorBrownMedium"), Color("ColorBrownDark")]),
+                startPoint: .top,
+                endPoint: .bottom
+              ))
+              .shadow(color: Color("ColorLight"), radius: 6, x: 0, y: 6)
+          )
+        Spacer();
+        Text(hutong.feature)
+          .font(.footnote)
+          .fontWeight(.bold)
+          .foregroundColor(Color("ColorBrownLight"))
+          .lineLimit(3)
+          .frame(width: 160)
+        Spacer();
+        //
       }
       .zIndex(0)
       .multilineTextAlignment(.center)
@@ -92,6 +151,7 @@ struct HutongRanking: View {
         // self.animate.toggle();
         // print("Async after 1 seconds");
       }
+      // animate.toggle();
       // self.animate.toggle();
       // self.animate = false;
       // sleep(UInt32(1.0));
