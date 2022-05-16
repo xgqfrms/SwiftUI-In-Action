@@ -39,13 +39,12 @@ struct SnackBarView: View {
           HStack {
             Spacer()
             VStack{
-              // 书签
-              
               Button(action: {
                 print("✅ self.marked = \(self.marked)");
                 // self.marked = true;
                 self.marked.toggle();
               }, label: {
+                // 书签
                 Image(systemName: "bookmark")
                   .font(.title.weight(.light))
                   // .foregroundColor(.white)

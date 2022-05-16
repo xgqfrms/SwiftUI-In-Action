@@ -67,7 +67,7 @@ struct SnackDetailView: View {
                 .imageScale(.large)
                 .font(.title.weight(.ultraLight))
                 .foregroundColor(Color("ColorBrownAdaptive"))
-                .padding(.trailing, 30)
+                // .padding(.trailing, 30)
               Text(item)
                 .lineLimit(nil)
                 .font(.footnote)
