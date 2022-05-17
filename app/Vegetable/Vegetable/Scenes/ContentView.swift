@@ -8,9 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+  var vegetables: [VegetableModel] = VegetableData;
   var body: some View {
-    Text("主场景视图")
-      .padding()
+    // 导航视图 NavigationView / NavigationLink
+    NavigationView {
+      // ScrollView 二次封装 ？List
+      List {
+        // shuffled 洗牌随机算法
+        ForEach(vegetables.shuffled()) {vegetable in
+          ListRowView(vegetable)
+            .padding(.vertical, 4)
+        }
+        /*
+        ForEach(vegetables) {vegetable in
+          ListRowView(vegetable)
+            .padding(.vertical, 4)
+        }
+        */
+      }
+    }
   }
 }
 
