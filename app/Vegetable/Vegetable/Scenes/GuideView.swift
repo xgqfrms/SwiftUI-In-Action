@@ -8,16 +8,29 @@
 import SwiftUI
 
 struct GuideView: View {
+  var cards: [VegetableModel] = VegetableData;
   var body: some View {
-    VStack(alignment: .leading, spacing: 5) {
-      Text("引导场景视图")
-      StartButtonView();
+    TabView {
+      /*
+      ForEach(cards) {card in
+        GuideCardView(card)
+      }
+      ForEach(0..<5) {card in
+       GuideCardView(card)
+      }
+      */
+      // 指定范围
+      ForEach(cards[0..<5]) {card in
+        GuideCardView(card)
+      }
     }
+    .tabViewStyle(PageTabViewStyle())
+    .padding(.vertical, 20)
   }
 }
 
 struct GuideView_Previews: PreviewProvider {
     static var previews: some View {
-        GuideView()
+      GuideView(cards: VegetableData)
     }
 }
