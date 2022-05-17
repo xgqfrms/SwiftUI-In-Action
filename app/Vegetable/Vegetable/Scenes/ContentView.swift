@@ -16,16 +16,13 @@ struct ContentView: View {
       List {
         // shuffled 洗牌随机算法
         ForEach(vegetables.shuffled()) {vegetable in
-          ListRowView(vegetable)
-            .padding(.vertical, 4)
+          NavigationLink(destination: VegetableDetailView(vegetable)) {
+            ListRowView(vegetable)
+              .padding(.vertical, 4)
+          }
         }
-        /*
-        ForEach(vegetables) {vegetable in
-          ListRowView(vegetable)
-            .padding(.vertical, 4)
-        }
-        */
       }
+      .navigationTitle("蔬菜导航列表")
     }
   }
 }

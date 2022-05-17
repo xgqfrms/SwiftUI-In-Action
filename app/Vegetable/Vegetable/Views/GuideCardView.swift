@@ -33,7 +33,7 @@ struct GuideCardView: View {
           .multilineTextAlignment(.leading)
           .padding()
           .frame(maxWidth: 480)
-        StartButtonView()
+        GuideButtonView()
       }
     }
     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)

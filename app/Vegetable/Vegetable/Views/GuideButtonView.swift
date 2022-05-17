@@ -1,5 +1,5 @@
 //
-//  StartButtonView.swift
+//  GuideButtonView.swift
 //  Vegetable
 //
 //  Created by 夏凌晨 on 2022/5/17.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct StartButtonView: View {
+struct GuideButtonView: View {
   // 可选变量
   @AppStorage("isFirst") var isFirst: Bool?;
   var body: some View {
@@ -45,7 +45,7 @@ struct StartButtonView: View {
 
 struct StartButtonView_Previews: PreviewProvider {
     static var previews: some View {
-      StartButtonView()
+      GuideButtonView()
         .previewLayout(.sizeThatFits)
     }
 }

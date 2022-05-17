@@ -12,11 +12,12 @@
 		707A98AA2833D65300E51BFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 707A98A92833D65300E51BFF /* Assets.xcassets */; };
 		707A98AD2833D65300E51BFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 707A98AC2833D65300E51BFF /* Preview Assets.xcassets */; };
 		707A98BA2833DC4600E51BFF /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98B92833DC4600E51BFF /* GuideView.swift */; };
-		707A98BC2833E1BF00E51BFF /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98BB2833E1BF00E51BFF /* StartButtonView.swift */; };
+		707A98BC2833E1BF00E51BFF /* GuideButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98BB2833E1BF00E51BFF /* GuideButtonView.swift */; };
 		707A98BE2833E32900E51BFF /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98BD2833E32900E51BFF /* ListRowView.swift */; };
 		707A98C02833E35300E51BFF /* VegetableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98BF2833E35300E51BFF /* VegetableModel.swift */; };
 		707A98C22833E36200E51BFF /* VegetableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98C12833E36200E51BFF /* VegetableData.swift */; };
 		707A98C42833EA4700E51BFF /* GuideCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98C32833EA4700E51BFF /* GuideCardView.swift */; };
+		707A98C628340BD700E51BFF /* VegetableDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98C528340BD700E51BFF /* VegetableDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +28,12 @@
 		707A98AC2833D65300E51BFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		707A98B82833DA9D00E51BFF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		707A98B92833DC4600E51BFF /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
-		707A98BB2833E1BF00E51BFF /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
+		707A98BB2833E1BF00E51BFF /* GuideButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideButtonView.swift; sourceTree = "<group>"; };
 		707A98BD2833E32900E51BFF /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		707A98BF2833E35300E51BFF /* VegetableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableModel.swift; sourceTree = "<group>"; };
 		707A98C12833E36200E51BFF /* VegetableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableData.swift; sourceTree = "<group>"; };
 		707A98C32833EA4700E51BFF /* GuideCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideCardView.swift; sourceTree = "<group>"; };
+		707A98C528340BD700E51BFF /* VegetableDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +97,10 @@
 		707A98B42833D6A100E51BFF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				707A98BB2833E1BF00E51BFF /* StartButtonView.swift */,
+				707A98BB2833E1BF00E51BFF /* GuideButtonView.swift */,
 				707A98BD2833E32900E51BFF /* ListRowView.swift */,
 				707A98C32833EA4700E51BFF /* GuideCardView.swift */,
+				707A98C528340BD700E51BFF /* VegetableDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,7 +202,8 @@
 			files = (
 				707A98A82833D65100E51BFF /* ContentView.swift in Sources */,
 				707A98C42833EA4700E51BFF /* GuideCardView.swift in Sources */,
-				707A98BC2833E1BF00E51BFF /* StartButtonView.swift in Sources */,
+				707A98C628340BD700E51BFF /* VegetableDetailView.swift in Sources */,
+				707A98BC2833E1BF00E51BFF /* GuideButtonView.swift in Sources */,
 				707A98BE2833E32900E51BFF /* ListRowView.swift in Sources */,
 				707A98C02833E35300E51BFF /* VegetableModel.swift in Sources */,
 				707A98C22833E36200E51BFF /* VegetableData.swift in Sources */,
