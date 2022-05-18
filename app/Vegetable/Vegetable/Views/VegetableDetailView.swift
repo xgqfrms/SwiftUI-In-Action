@@ -33,6 +33,7 @@ struct VegetableDetailView: View {
               .font(.headline)
               .multilineTextAlignment(.leading)
             // 折叠面板
+            FoldPanelView(vegetable)
             Text("了解更多: \(vegetable.title)")
               .fontWeight(.bold)
               .foregroundColor(vegetable.colors[1])
@@ -41,6 +42,8 @@ struct VegetableDetailView: View {
               .multilineTextAlignment(.leading)
             // iframe 外链
             OutLinkView(vegetable)
+              .padding(.top, 10)
+              .padding(.bottom, 40)
           }
           .padding(.horizontal, 20)
           .frame(maxWidth: 640, alignment: .center)
