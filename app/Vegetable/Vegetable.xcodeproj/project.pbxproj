@@ -18,6 +18,9 @@
 		707A98C22833E36200E51BFF /* VegetableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98C12833E36200E51BFF /* VegetableData.swift */; };
 		707A98C42833EA4700E51BFF /* GuideCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98C32833EA4700E51BFF /* GuideCardView.swift */; };
 		707A98C628340BD700E51BFF /* VegetableDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98C528340BD700E51BFF /* VegetableDetailView.swift */; };
+		707A98C82834B1E800E51BFF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98C72834B1E800E51BFF /* SettingsView.swift */; };
+		707A98CA2834B61C00E51BFF /* VegetableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98C92834B61C00E51BFF /* VegetableHeaderView.swift */; };
+		707A98CC2834C2C100E51BFF /* OutLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98CB2834C2C100E51BFF /* OutLinkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		707A98C12833E36200E51BFF /* VegetableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableData.swift; sourceTree = "<group>"; };
 		707A98C32833EA4700E51BFF /* GuideCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideCardView.swift; sourceTree = "<group>"; };
 		707A98C528340BD700E51BFF /* VegetableDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableDetailView.swift; sourceTree = "<group>"; };
+		707A98C72834B1E800E51BFF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		707A98C92834B61C00E51BFF /* VegetableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableHeaderView.swift; sourceTree = "<group>"; };
+		707A98CB2834C2C100E51BFF /* OutLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutLinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 				707A98BD2833E32900E51BFF /* ListRowView.swift */,
 				707A98C32833EA4700E51BFF /* GuideCardView.swift */,
 				707A98C528340BD700E51BFF /* VegetableDetailView.swift */,
+				707A98CB2834C2C100E51BFF /* OutLinkView.swift */,
+				707A98C92834B61C00E51BFF /* VegetableHeaderView.swift */,
+				707A98C72834B1E800E51BFF /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,9 +213,12 @@
 				707A98C42833EA4700E51BFF /* GuideCardView.swift in Sources */,
 				707A98C628340BD700E51BFF /* VegetableDetailView.swift in Sources */,
 				707A98BC2833E1BF00E51BFF /* GuideButtonView.swift in Sources */,
+				707A98CA2834B61C00E51BFF /* VegetableHeaderView.swift in Sources */,
 				707A98BE2833E32900E51BFF /* ListRowView.swift in Sources */,
+				707A98C82834B1E800E51BFF /* SettingsView.swift in Sources */,
 				707A98C02833E35300E51BFF /* VegetableModel.swift in Sources */,
 				707A98C22833E36200E51BFF /* VegetableData.swift in Sources */,
+				707A98CC2834C2C100E51BFF /* OutLinkView.swift in Sources */,
 				707A98BA2833DC4600E51BFF /* GuideView.swift in Sources */,
 				707A98A62833D65100E51BFF /* VegetableApp.swift in Sources */,
 			);
