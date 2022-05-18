@@ -27,13 +27,15 @@ let DeveloperData: [DeveloperModel] = [
     key: "官方网站",
     value: "https://vegetable.xgqfrms.xyz",
     isURL: true,
-    url: "vegetable.xgqfrms.xyz"
+    url: "https://cdn.xgqfrms.xyz"
   ),
   DeveloperModel(
     key: "Github",
-    value: "https://github.com/xgqfrms",
+    value: "https://github.com/xgqfrms/xgqfrms",
+    // value: "https://github.com/xgqfrms/cdn",
+    // value: "https://github.com/xgqfrms/",
     isURL: true,
-    url: "github.com/xgqfrms"
+    url: "https://github.com/xgqfrms/swiftui-in-action"
   ),
   DeveloperModel(
     key: "版本",

@@ -13,6 +13,6 @@ struct DeveloperModel: Identifiable {
   var value: String;
   var isURL: Bool;
   // 可选属性
-   var url: String?;
+  var url: String?;
 }
 
