@@ -11,9 +11,8 @@ struct DeveloperModel: Identifiable {
   var id: UUID = UUID();
   var key: String;
   var value: String;
+  var isURL: Bool;
   // 可选属性
-  var isURL: Bool?;
-  // var linkName: String?;
-  // var linkURL: String?;
+   var url: String?;
 }
 

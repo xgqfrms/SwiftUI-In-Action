@@ -33,7 +33,7 @@ struct SettingsView: View {
             ForEach(developer) {item in
               Divider()
                 .padding(.vertical, 4);
-              DeveloperView(item.key, item.value, item.isURL ?? false);
+              DeveloperView(item.key, value: item.value, isURL: item.isURL);
             }
           }
         }
