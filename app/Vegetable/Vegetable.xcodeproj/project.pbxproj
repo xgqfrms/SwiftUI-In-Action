@@ -21,6 +21,7 @@
 		707A98C82834B1E800E51BFF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98C72834B1E800E51BFF /* SettingsView.swift */; };
 		707A98CA2834B61C00E51BFF /* VegetableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98C92834B61C00E51BFF /* VegetableHeaderView.swift */; };
 		707A98CC2834C2C100E51BFF /* OutLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98CB2834C2C100E51BFF /* OutLinkView.swift */; };
+		707A98CE2834D5C200E51BFF /* IframeWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98CD2834D5C200E51BFF /* IframeWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		707A98C72834B1E800E51BFF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		707A98C92834B61C00E51BFF /* VegetableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableHeaderView.swift; sourceTree = "<group>"; };
 		707A98CB2834C2C100E51BFF /* OutLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutLinkView.swift; sourceTree = "<group>"; };
+		707A98CD2834D5C200E51BFF /* IframeWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IframeWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				707A98C528340BD700E51BFF /* VegetableDetailView.swift */,
 				707A98CB2834C2C100E51BFF /* OutLinkView.swift */,
 				707A98C92834B61C00E51BFF /* VegetableHeaderView.swift */,
+				707A98CD2834D5C200E51BFF /* IframeWebView.swift */,
 				707A98C72834B1E800E51BFF /* SettingsView.swift */,
 			);
 			path = Views;
@@ -218,6 +221,7 @@
 				707A98C82834B1E800E51BFF /* SettingsView.swift in Sources */,
 				707A98C02833E35300E51BFF /* VegetableModel.swift in Sources */,
 				707A98C22833E36200E51BFF /* VegetableData.swift in Sources */,
+				707A98CE2834D5C200E51BFF /* IframeWebView.swift in Sources */,
 				707A98CC2834C2C100E51BFF /* OutLinkView.swift in Sources */,
 				707A98BA2833DC4600E51BFF /* GuideView.swift in Sources */,
 				707A98A62833D65100E51BFF /* VegetableApp.swift in Sources */,
