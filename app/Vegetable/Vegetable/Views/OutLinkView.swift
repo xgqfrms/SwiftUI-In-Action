@@ -48,6 +48,9 @@ struct OutLinkView: View {
         Spacer()
         // Link("维基百科-\(vegetable.title)", destination: getEncodeURL(vegetable.title))
         Link("维基百科-\(vegetable.title)", destination: getEncodeURI(vegetable.title))
+        // Link(Text("维基百科-\(vegetable.title)"), destination: getEncodeURI(vegetable.title))
+        // ??? Link 文字如何添加颜色
+        // ❌ Initializer 'init(_:destination:)' requires that 'Text' conform to 'StringProtocol'
         // Link("维基百科", destination: URL(string: getEncodeString(vegetable.title) ?? vegetable.title!)
         // ❌ cannot force unwrap value of non-optional type 'String'
         // Link("维基百科", destination: URL(string: "https://zh.wikipedia.org/wiki/\(vegetable.title)")!)

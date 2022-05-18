@@ -22,7 +22,7 @@ struct ContentView: View {
           }
         }
       }
-      .navigationTitle("蔬菜导航列表")
+      .navigationTitle("蔬菜列表")
     }
   }
 }

@@ -21,6 +21,11 @@
 icons, 颜色集, 图片集
 
 
+## Stickers
+
+> Messages 贴图
+
+
 ## Architecture
 
 

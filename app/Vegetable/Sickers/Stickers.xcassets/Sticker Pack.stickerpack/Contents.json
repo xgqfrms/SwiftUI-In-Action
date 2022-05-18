@@ -1,0 +1,44 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "grid-size" : "small"
+  },
+  "stickers" : [
+    {
+      "filename" : "radish.sticker"
+    },
+    {
+      "filename" : "winter_melon.sticker"
+    },
+    {
+      "filename" : "bell_peppers.sticker"
+    },
+    {
+      "filename" : "purple_kale.sticker"
+    },
+    {
+      "filename" : "cucumber.sticker"
+    },
+    {
+      "filename" : "broccoli.sticker"
+    },
+    {
+      "filename" : "eggplant.sticker"
+    },
+    {
+      "filename" : "carrot.sticker"
+    },
+    {
+      "filename" : "potato.sticker"
+    },
+    {
+      "filename" : "tomato.sticker"
+    },
+    {
+      "filename" : "pumpkin.sticker"
+    }
+  ]
+}
