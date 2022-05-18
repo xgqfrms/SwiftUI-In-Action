@@ -22,7 +22,7 @@ struct ListRowView: View {
         // 原始像素图片
         .renderingMode(.original)
         // 非透明部分图片，使用系统颜色（light/ dark）
-        .renderingMode(.template)
+        // .renderingMode(.template)
         .resizable()
         .scaledToFit()
         .frame(width: 80, height: 80, alignment: .center)

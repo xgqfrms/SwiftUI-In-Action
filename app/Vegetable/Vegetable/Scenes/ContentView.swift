@@ -9,10 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
   var vegetables: [VegetableModel] = VegetableData;
+  @State private var showSettings: Bool = false;
   var body: some View {
     // 导航视图 NavigationView / NavigationLink
     NavigationView {
-      // ScrollView 二次封装 ？List
+      // ScrollView 二次封装 === List ???
       List {
         // shuffled 洗牌随机算法
         ForEach(vegetables.shuffled()) {vegetable in
@@ -22,7 +23,24 @@ struct ContentView: View {
           }
         }
       }
+      // 导航栏标题
       .navigationTitle("蔬菜列表")
+      // 导航栏操作
+      .navigationBarItems(trailing: Button(
+        action: {
+          print("open");
+          showSettings = true;
+        },
+        label: {
+          // Image(systemName: "slider.horizontal.3")
+          Image(systemName: "gear.circle")
+            .foregroundColor(.green)
+        }
+      ))
+      // 抽屉弹层
+      .sheet(isPresented: $showSettings) {
+        SettingsView();
+      }
     }
   }
 }

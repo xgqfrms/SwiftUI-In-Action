@@ -25,6 +25,10 @@
 		707A98D028350E2F00E51BFF /* FoldPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98CF28350E2F00E51BFF /* FoldPanelView.swift */; };
 		707A98D82835275800E51BFF /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 707A98D72835275800E51BFF /* Stickers.xcassets */; };
 		707A98DC2835275800E51BFF /* Sickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 707A98D52835275600E51BFF /* Sickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		707A98E2283549F700E51BFF /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98E1283549F700E51BFF /* LabelView.swift */; };
+		707A98E428354F8200E51BFF /* DeveloperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98E328354F8200E51BFF /* DeveloperView.swift */; };
+		707A98E628354FE700E51BFF /* DeveloperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98E528354FE700E51BFF /* DeveloperModel.swift */; };
+		707A98E82835500900E51BFF /* DeveloperData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A98E72835500900E51BFF /* DeveloperData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,10 @@
 		707A98D52835275600E51BFF /* Sickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Sickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		707A98D72835275800E51BFF /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		707A98D92835275800E51BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		707A98E1283549F700E51BFF /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		707A98E328354F8200E51BFF /* DeveloperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperView.swift; sourceTree = "<group>"; };
+		707A98E528354FE700E51BFF /* DeveloperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperModel.swift; sourceTree = "<group>"; };
+		707A98E72835500900E51BFF /* DeveloperData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +153,8 @@
 				707A98CF28350E2F00E51BFF /* FoldPanelView.swift */,
 				707A98CB2834C2C100E51BFF /* OutLinkView.swift */,
 				707A98C92834B61C00E51BFF /* VegetableHeaderView.swift */,
+				707A98E328354F8200E51BFF /* DeveloperView.swift */,
+				707A98E1283549F700E51BFF /* LabelView.swift */,
 				707A98CD2834D5C200E51BFF /* IframeWebView.swift */,
 				707A98C72834B1E800E51BFF /* SettingsView.swift */,
 			);
@@ -155,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				707A98C12833E36200E51BFF /* VegetableData.swift */,
+				707A98E72835500900E51BFF /* DeveloperData.swift */,
 			);
 			path = Datas;
 			sourceTree = "<group>";
@@ -163,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				707A98BF2833E35300E51BFF /* VegetableModel.swift */,
+				707A98E528354FE700E51BFF /* DeveloperModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -292,12 +304,16 @@
 				707A98BE2833E32900E51BFF /* ListRowView.swift in Sources */,
 				707A98C82834B1E800E51BFF /* SettingsView.swift in Sources */,
 				707A98C02833E35300E51BFF /* VegetableModel.swift in Sources */,
+				707A98E628354FE700E51BFF /* DeveloperModel.swift in Sources */,
 				707A98C22833E36200E51BFF /* VegetableData.swift in Sources */,
 				707A98CE2834D5C200E51BFF /* IframeWebView.swift in Sources */,
 				707A98CC2834C2C100E51BFF /* OutLinkView.swift in Sources */,
 				707A98BA2833DC4600E51BFF /* GuideView.swift in Sources */,
 				707A98D028350E2F00E51BFF /* FoldPanelView.swift in Sources */,
+				707A98E82835500900E51BFF /* DeveloperData.swift in Sources */,
 				707A98A62833D65100E51BFF /* VegetableApp.swift in Sources */,
+				707A98E2283549F700E51BFF /* LabelView.swift in Sources */,
+				707A98E428354F8200E51BFF /* DeveloperView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
