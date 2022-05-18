@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
+  var developer: [DeveloperModel] = DeveloperData;
   // @Environment(\.presentationMode) var presentationMode;
   @Environment(\.presentationMode) var isShowSettings;
   var body: some View {
@@ -28,10 +29,12 @@ struct SettingsView: View {
                 .font(.footnote)
             }
           }
-          GroupBox(label: LabelView("标题", "info.circle")) {
-            Divider()
-              .padding(.vertical, 4);
-//            DeveloperView();
+          GroupBox(label: LabelView("应用程序", "info.circle")) {
+            ForEach(developer) {item in
+              Divider()
+                .padding(.vertical, 4);
+              DeveloperView(item.key, item.value, item.isURL ?? false);
+            }
           }
         }
         // .navigationBarTitle(Text("设置"), displayMode: .large)
