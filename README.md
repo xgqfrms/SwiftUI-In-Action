@@ -38,6 +38,5 @@ https://www.infoq.com/news/2021/07/swiftui-3-beta/
 
 https://www.hackingwithswift.com/100/swiftui/
 
-https://www.hackingwithswift.com/100/swift
 
 
