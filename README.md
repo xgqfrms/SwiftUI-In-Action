@@ -24,6 +24,8 @@ https://developer.apple.com/cn/documentation/swiftui/
 
 https://developer.apple.com/cn/tutorials/SwiftUI
 
+https://developer.apple.com/videos/developer-tools/
+
 
 ## Swift 5.6
 
@@ -33,4 +35,9 @@ https://docs.swift.org/swift-book/RevisionHistory/RevisionHistory.html
 ## refs
 
 https://www.infoq.com/news/2021/07/swiftui-3-beta/
+
+https://www.hackingwithswift.com/100/swiftui/
+
+https://www.hackingwithswift.com/100/swift
+
 
