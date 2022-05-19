@@ -21,6 +21,10 @@
 		707A9934283629A700E51BFF /* 杭州西湖.mov in Resources */ = {isa = PBXBuildFile; fileRef = 707A992A283629A500E51BFF /* 杭州西湖.mov */; };
 		707A9935283629A700E51BFF /* 日月潭.mov in Resources */ = {isa = PBXBuildFile; fileRef = 707A992B283629A600E51BFF /* 日月潭.mov */; };
 		707A9936283629A700E51BFF /* 苏州园林.mov in Resources */ = {isa = PBXBuildFile; fileRef = 707A992C283629A700E51BFF /* 苏州园林.mov */; };
+		707A993E2836337800E51BFF /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = 707A993A2836337800E51BFF /* places.json */; };
+		707A993F2836337800E51BFF /* covers.json in Resources */ = {isa = PBXBuildFile; fileRef = 707A993B2836337800E51BFF /* covers.json */; };
+		707A99402836337800E51BFF /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 707A993C2836337800E51BFF /* locations.json */; };
+		707A99412836337800E51BFF /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 707A993D2836337800E51BFF /* videos.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,10 @@
 		707A992A283629A500E51BFF /* 杭州西湖.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "杭州西湖.mov"; sourceTree = "<group>"; };
 		707A992B283629A600E51BFF /* 日月潭.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "日月潭.mov"; sourceTree = "<group>"; };
 		707A992C283629A700E51BFF /* 苏州园林.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "苏州园林.mov"; sourceTree = "<group>"; };
+		707A993A2836337800E51BFF /* places.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = places.json; sourceTree = "<group>"; };
+		707A993B2836337800E51BFF /* covers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = covers.json; sourceTree = "<group>"; };
+		707A993C2836337800E51BFF /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		707A993D2836337800E51BFF /* videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videos.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,7 @@
 			children = (
 				707A99132836250E00E51BFF /* PlacesOfInterest */,
 				707A993828362B9500E51BFF /* Stickers */,
+				707A99392836323100E51BFF /* Datas */,
 				707A99222836294A00E51BFF /* Videos */,
 				707A99122836250E00E51BFF /* Products */,
 			);
@@ -111,6 +120,17 @@
 			children = (
 			);
 			path = Stickers;
+			sourceTree = "<group>";
+		};
+		707A99392836323100E51BFF /* Datas */ = {
+			isa = PBXGroup;
+			children = (
+				707A993B2836337800E51BFF /* covers.json */,
+				707A993C2836337800E51BFF /* locations.json */,
+				707A993A2836337800E51BFF /* places.json */,
+				707A993D2836337800E51BFF /* videos.json */,
+			);
+			path = Datas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,10 +197,14 @@
 				707A991C2836250F00E51BFF /* Preview Assets.xcassets in Resources */,
 				707A992F283629A700E51BFF /* 承德避暑山庄.mov in Resources */,
 				707A9936283629A700E51BFF /* 苏州园林.mov in Resources */,
+				707A993E2836337800E51BFF /* places.json in Resources */,
+				707A99402836337800E51BFF /* locations.json in Resources */,
+				707A993F2836337800E51BFF /* covers.json in Resources */,
 				707A9932283629A700E51BFF /* 安徽黄山.mov in Resources */,
 				707A9930283629A700E51BFF /* 兵马俑.mov in Resources */,
 				707A9931283629A700E51BFF /* 长江三峡.mov in Resources */,
 				707A99192836250F00E51BFF /* Assets.xcassets in Resources */,
+				707A99412836337800E51BFF /* videos.json in Resources */,
 				707A9934283629A700E51BFF /* 杭州西湖.mov in Resources */,
 				707A992E283629A700E51BFF /* 北京故宫.mov in Resources */,
 			);
