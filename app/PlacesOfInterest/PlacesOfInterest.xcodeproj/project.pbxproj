@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		707A99152836250E00E51BFF /* PlacesOfInterestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A99142836250E00E51BFF /* PlacesOfInterestApp.swift */; };
+		707A99172836250E00E51BFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A99162836250E00E51BFF /* ContentView.swift */; };
+		707A99192836250F00E51BFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 707A99182836250F00E51BFF /* Assets.xcassets */; };
+		707A991C2836250F00E51BFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 707A991B2836250F00E51BFF /* Preview Assets.xcassets */; };
+		707A992D283629A700E51BFF /* 万里长城.mov in Resources */ = {isa = PBXBuildFile; fileRef = 707A99232836299E00E51BFF /* 万里长城.mov */; };
+		707A992E283629A700E51BFF /* 北京故宫.mov in Resources */ = {isa = PBXBuildFile; fileRef = 707A99242836299F00E51BFF /* 北京故宫.mov */; };
+		707A992F283629A700E51BFF /* 承德避暑山庄.mov in Resources */ = {isa = PBXBuildFile; fileRef = 707A9925283629A100E51BFF /* 承德避暑山庄.mov */; };
+		707A9930283629A700E51BFF /* 兵马俑.mov in Resources */ = {isa = PBXBuildFile; fileRef = 707A9926283629A100E51BFF /* 兵马俑.mov */; };
+		707A9931283629A700E51BFF /* 长江三峡.mov in Resources */ = {isa = PBXBuildFile; fileRef = 707A9927283629A300E51BFF /* 长江三峡.mov */; };
+		707A9932283629A700E51BFF /* 安徽黄山.mov in Resources */ = {isa = PBXBuildFile; fileRef = 707A9928283629A400E51BFF /* 安徽黄山.mov */; };
+		707A9933283629A700E51BFF /* 桂林山水.mov in Resources */ = {isa = PBXBuildFile; fileRef = 707A9929283629A500E51BFF /* 桂林山水.mov */; };
+		707A9934283629A700E51BFF /* 杭州西湖.mov in Resources */ = {isa = PBXBuildFile; fileRef = 707A992A283629A500E51BFF /* 杭州西湖.mov */; };
+		707A9935283629A700E51BFF /* 日月潭.mov in Resources */ = {isa = PBXBuildFile; fileRef = 707A992B283629A600E51BFF /* 日月潭.mov */; };
+		707A9936283629A700E51BFF /* 苏州园林.mov in Resources */ = {isa = PBXBuildFile; fileRef = 707A992C283629A700E51BFF /* 苏州园林.mov */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		707A99112836250E00E51BFF /* PlacesOfInterest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlacesOfInterest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		707A99142836250E00E51BFF /* PlacesOfInterestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesOfInterestApp.swift; sourceTree = "<group>"; };
+		707A99162836250E00E51BFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		707A99182836250F00E51BFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		707A991B2836250F00E51BFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		707A99232836299E00E51BFF /* 万里长城.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "万里长城.mov"; sourceTree = "<group>"; };
+		707A99242836299F00E51BFF /* 北京故宫.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "北京故宫.mov"; sourceTree = "<group>"; };
+		707A9925283629A100E51BFF /* 承德避暑山庄.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "承德避暑山庄.mov"; sourceTree = "<group>"; };
+		707A9926283629A100E51BFF /* 兵马俑.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "兵马俑.mov"; sourceTree = "<group>"; };
+		707A9927283629A300E51BFF /* 长江三峡.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "长江三峡.mov"; sourceTree = "<group>"; };
+		707A9928283629A400E51BFF /* 安徽黄山.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "安徽黄山.mov"; sourceTree = "<group>"; };
+		707A9929283629A500E51BFF /* 桂林山水.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "桂林山水.mov"; sourceTree = "<group>"; };
+		707A992A283629A500E51BFF /* 杭州西湖.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "杭州西湖.mov"; sourceTree = "<group>"; };
+		707A992B283629A600E51BFF /* 日月潭.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "日月潭.mov"; sourceTree = "<group>"; };
+		707A992C283629A700E51BFF /* 苏州园林.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "苏州园林.mov"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		707A990E2836250E00E51BFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		707A99082836250E00E51BFF = {
+			isa = PBXGroup;
+			children = (
+				707A99222836294A00E51BFF /* Videos */,
+				707A99132836250E00E51BFF /* PlacesOfInterest */,
+				707A99122836250E00E51BFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		707A99122836250E00E51BFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				707A99112836250E00E51BFF /* PlacesOfInterest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		707A99132836250E00E51BFF /* PlacesOfInterest */ = {
+			isa = PBXGroup;
+			children = (
+				707A99142836250E00E51BFF /* PlacesOfInterestApp.swift */,
+				707A99162836250E00E51BFF /* ContentView.swift */,
+				707A99182836250F00E51BFF /* Assets.xcassets */,
+				707A991A2836250F00E51BFF /* Preview Content */,
+			);
+			path = PlacesOfInterest;
+			sourceTree = "<group>";
+		};
+		707A991A2836250F00E51BFF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				707A991B2836250F00E51BFF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		707A99222836294A00E51BFF /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				707A99232836299E00E51BFF /* 万里长城.mov */,
+				707A9926283629A100E51BFF /* 兵马俑.mov */,
+				707A99242836299F00E51BFF /* 北京故宫.mov */,
+				707A9928283629A400E51BFF /* 安徽黄山.mov */,
+				707A9925283629A100E51BFF /* 承德避暑山庄.mov */,
+				707A992B283629A600E51BFF /* 日月潭.mov */,
+				707A992A283629A500E51BFF /* 杭州西湖.mov */,
+				707A9929283629A500E51BFF /* 桂林山水.mov */,
+				707A992C283629A700E51BFF /* 苏州园林.mov */,
+				707A9927283629A300E51BFF /* 长江三峡.mov */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		707A99102836250E00E51BFF /* PlacesOfInterest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 707A991F2836250F00E51BFF /* Build configuration list for PBXNativeTarget "PlacesOfInterest" */;
+			buildPhases = (
+				707A990D2836250E00E51BFF /* Sources */,
+				707A990E2836250E00E51BFF /* Frameworks */,
+				707A990F2836250E00E51BFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlacesOfInterest;
+			productName = PlacesOfInterest;
+			productReference = 707A99112836250E00E51BFF /* PlacesOfInterest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		707A99092836250E00E51BFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					707A99102836250E00E51BFF = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 707A990C2836250E00E51BFF /* Build configuration list for PBXProject "PlacesOfInterest" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 707A99082836250E00E51BFF;
+			productRefGroup = 707A99122836250E00E51BFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				707A99102836250E00E51BFF /* PlacesOfInterest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		707A990F2836250E00E51BFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				707A992D283629A700E51BFF /* 万里长城.mov in Resources */,
+				707A9933283629A700E51BFF /* 桂林山水.mov in Resources */,
+				707A9935283629A700E51BFF /* 日月潭.mov in Resources */,
+				707A991C2836250F00E51BFF /* Preview Assets.xcassets in Resources */,
+				707A992F283629A700E51BFF /* 承德避暑山庄.mov in Resources */,
+				707A9936283629A700E51BFF /* 苏州园林.mov in Resources */,
+				707A9932283629A700E51BFF /* 安徽黄山.mov in Resources */,
+				707A9930283629A700E51BFF /* 兵马俑.mov in Resources */,
+				707A9931283629A700E51BFF /* 长江三峡.mov in Resources */,
+				707A99192836250F00E51BFF /* Assets.xcassets in Resources */,
+				707A9934283629A700E51BFF /* 杭州西湖.mov in Resources */,
+				707A992E283629A700E51BFF /* 北京故宫.mov in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		707A990D2836250E00E51BFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				707A99172836250E00E51BFF /* ContentView.swift in Sources */,
+				707A99152836250E00E51BFF /* PlacesOfInterestApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		707A991D2836250F00E51BFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		707A991E2836250F00E51BFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		707A99202836250F00E51BFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PlacesOfInterest/Preview Content\"";
+				DEVELOPMENT_TEAM = GPGP7L32J5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.xgqfrms.app.PlacesOfInterest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		707A99212836250F00E51BFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PlacesOfInterest/Preview Content\"";
+				DEVELOPMENT_TEAM = GPGP7L32J5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.xgqfrms.app.PlacesOfInterest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		707A990C2836250E00E51BFF /* Build configuration list for PBXProject "PlacesOfInterest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				707A991D2836250F00E51BFF /* Debug */,
+				707A991E2836250F00E51BFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		707A991F2836250F00E51BFF /* Build configuration list for PBXNativeTarget "PlacesOfInterest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				707A99202836250F00E51BFF /* Debug */,
+				707A99212836250F00E51BFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 707A99092836250E00E51BFF /* Project object */;
+}
