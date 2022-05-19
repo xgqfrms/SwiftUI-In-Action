@@ -12,15 +12,15 @@ struct GuideView: View {
   var body: some View {
     TabView {
       /*
-      ForEach(cards) {card in
-        GuideCardView(card)
-      }
       ForEach(0..<5) {card in
        GuideCardView(card)
       }
-      */
       // 指定范围
       ForEach(cards[0..<5]) {card in
+        GuideCardView(card)
+      }
+      */
+      ForEach(cards) {card in
         GuideCardView(card)
       }
     }
