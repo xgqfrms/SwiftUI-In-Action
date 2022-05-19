@@ -47,6 +47,7 @@
 		707A993B2836337800E51BFF /* covers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = covers.json; sourceTree = "<group>"; };
 		707A993C2836337800E51BFF /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
 		707A993D2836337800E51BFF /* videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videos.json; sourceTree = "<group>"; };
+		707A9942283647CE00E51BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +66,6 @@
 			children = (
 				707A99132836250E00E51BFF /* PlacesOfInterest */,
 				707A993828362B9500E51BFF /* Stickers */,
-				707A99392836323100E51BFF /* Datas */,
-				707A99222836294A00E51BFF /* Videos */,
 				707A99122836250E00E51BFF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,8 +81,12 @@
 		707A99132836250E00E51BFF /* PlacesOfInterest */ = {
 			isa = PBXGroup;
 			children = (
-				707A99142836250E00E51BFF /* PlacesOfInterestApp.swift */,
-				707A99162836250E00E51BFF /* ContentView.swift */,
+				707A9942283647CE00E51BFF /* Info.plist */,
+				707A99432836827B00E51BFF /* App */,
+				707A99442836833E00E51BFF /* Views */,
+				707A99452836834400E51BFF /* Models */,
+				707A99392836323100E51BFF /* Datas */,
+				707A99222836294A00E51BFF /* Videos */,
 				707A99182836250F00E51BFF /* Assets.xcassets */,
 				707A991A2836250F00E51BFF /* Preview Content */,
 			);
@@ -131,6 +134,29 @@
 				707A993D2836337800E51BFF /* videos.json */,
 			);
 			path = Datas;
+			sourceTree = "<group>";
+		};
+		707A99432836827B00E51BFF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				707A99142836250E00E51BFF /* PlacesOfInterestApp.swift */,
+				707A99162836250E00E51BFF /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		707A99442836833E00E51BFF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		707A99452836834400E51BFF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,9 +376,11 @@
 				DEVELOPMENT_TEAM = GPGP7L32J5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlacesOfInterest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "名胜古迹";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -379,9 +407,11 @@
 				DEVELOPMENT_TEAM = GPGP7L32J5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlacesOfInterest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "名胜古迹";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
