@@ -11,6 +11,9 @@ struct SettingsView: View {
   var developer: [DeveloperModel] = DeveloperData;
   // @Environment(\.presentationMode) var presentationMode;
   @Environment(\.presentationMode) var isShowSettings;
+  @AppStorage("isFirst") var isFirst: Bool = false;
+  // UI View 上下文错误 ❌ self
+  // var bgColor: Color = Color(UIColor.tertiarySystemBackground).clipShape(Shape().RoundedRectangle(cornerRadius(8), style: self.continuous));
   var body: some View {
     NavigationView {
       ScrollView(.vertical, showsIndicators: false){
@@ -33,17 +36,34 @@ struct SettingsView: View {
             ForEach(developer) {item in
               Divider()
                 .padding(.vertical, 4);
-              // DeveloperView(item.key, value: item.value, isURL: item.isURL);
               // DeveloperView(item.key, item.value, item.isURL, item.url!);
               DeveloperView(item.key, item.value, item.isURL, item.url ?? "");
-              /*
-              if(item.url != nil) {
-                DeveloperView(item.key, item.value, item.isURL);
-              } else {
-                DeveloperView(item.key, item.value, item.isURL, item.url!);
-              }
-              */
             }
+          }
+          GroupBox(label: LabelView("引导界面", "questionmark.circle")) {
+            Divider()
+              .padding(.vertical, 4);
+            Text("通过这个开关可以控制，再次开启或关闭引导界面, abcedefghijklmnopqrstuvwxyz ✅")
+              .padding(.vertical, 8)
+              // 防止长文本被系统截断，展示 ...
+              .layoutPriority(1)
+              .font(.footnote)
+              .multilineTextAlignment(.leading)
+            Toggle(isOn: $isFirst) {
+              if(isFirst) {
+                Text("已开启✅")
+                  .fontWeight(.bold)
+                  .foregroundColor(.green)
+              } else {
+                Text("已关闭❌")
+                  .fontWeight(.bold)
+                  .foregroundColor(.gray)
+              }
+            }
+            .padding()
+            // 使用系统背景色 UIColor.tertiarySystemBackground
+            .background(Color(UIColor.tertiarySystemBackground).clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous)));
+            // .background(bgColor);
           }
         }
         // .navigationBarTitle(Text("设置"), displayMode: .large)
