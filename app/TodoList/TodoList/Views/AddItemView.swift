@@ -7,13 +7,29 @@
 
 import SwiftUI
 
-//import UIKit
-//import Foundation
-
 struct AddItemView: View {
   @State private var input: String = "";
-  // let color: UIColor = ColorLiteral;
-  // Cannot find 'ColorLiteral' in scope
+  @State var showAlert: Bool = false;
+  @State var alertTitle: String = "";
+  // var alertTitle: String = "";
+  func getAlert() -> Alert {
+    return Alert(title: Text(alertTitle))
+  }
+  func checkInput() -> Bool {
+    if(input.count < 3) {
+      alertTitle = "Your input text at least 3 characters long ❌";
+      // Cannot assign to property: 'self' is immutable
+      // Mark method 'mutating' to make 'self' mutable
+      showAlert.toggle()
+      return false
+    }
+    return true
+  }
+  func clickSave() {
+    if(checkInput()) {
+      //
+    }
+  }
   var body: some View {
     ScrollView {
       VStack {
@@ -21,16 +37,11 @@ struct AddItemView: View {
           .padding(.horizontal)
           .frame(height: 55)
           .background(Color(UIColor.secondarySystemBackground))
-        // .foregroundColor(.secondary)
-        // Color Literal ❌ not exist
-        // .background(Color(.green))
-        // .background(Color(#colorLiteral(red: 0.0, green: 1.0, blue: 0.0, alpha: 255)))
-        // .background(Color(.gray))
-        // .background(Color("customGreen"))
           .cornerRadius(10)
         Button(
           action: {
             print("save input")
+            clickSave();
           },
           label: {
             Text("Save".uppercased())
@@ -47,6 +58,7 @@ struct AddItemView: View {
       .padding(14)
     }
     .navigationTitle("Add Item ✍🏻")
+    .alert(isPresented: $showAlert, content: getAlert)
   }
 }
 
