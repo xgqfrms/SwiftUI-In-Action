@@ -34,28 +34,25 @@ struct ListView: View {
       }
       .listStyle(PlainListStyle())
       .navigationTitle("Todo List")
+      .navigationBarItems(
+        leading: EditButton(),
+        trailing: NavigationLink("Add", destination: AddItemView())
+      )
 //      .toolbar {
-//        EditButton()
-//          .foregroundColor(.blue)
-//      }
-      .toolbar {
-//        ToolbarItemGroup {
-//          EditButton()
-//            .foregroundColor(.green)
-//          NavigationLink("Add", destination: AddItemView())
+//        ToolbarItem(placement: .navigationBarLeading) {
+//          HStack {
+//            EditButton()
+//              .foregroundColor(.pink)
+//            Image(systemName: "pencil.circle")
+//          }
 //        }
-          ToolbarItem(placement: .navigationBarLeading) {
-            HStack {
-              EditButton()
-                .foregroundColor(.pink)
-              Image(systemName: "pencil.circle")
-            }
-          }
-          ToolbarItem(placement: .navigationBarTrailing) {
-            Image(systemName: "gear.circle")
-            // NavigationLink("Add", destination: AddItemView())
-          }
-      }
+//        ToolbarItem(placement: .navigationBarTrailing) {
+//          HStack {
+//            NavigationLink("Add", destination: AddItemView())
+//            Image(systemName: "gear.circle")
+//          }
+//        }
+//      }
     }
   }
 }
