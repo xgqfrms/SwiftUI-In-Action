@@ -13,11 +13,9 @@ struct TodoListApp: App {
   let listData: [ListModel] = ListData;
   var body: some Scene {
     WindowGroup {
-      // 导航视图
-      NavigationView {
-        // ListView(listData);
-        ListView();
-      }
+      // ListView(listData);
+      ListView();
+      // EditButtonBugView();
     }
   }
 }

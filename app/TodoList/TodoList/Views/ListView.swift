@@ -12,75 +12,58 @@ struct ListView: View {
 //  init(_ list: [ListModel]) {
 //    self.items = list;
 //  }
-  @State var items: [String] = [
+  @State private var items: [String] = [
     "abc",
     "xyz",
     "ufo",
     "wtf"
   ];
   var body: some View {
-    List {
-//      ForEach(items) {item in
-//        RowView(item)
+    // 导航视图
+    NavigationView {
+      List {
+        ForEach(items, id: \.self) {item in
+          RowView(item: item)
+        }
+        .onDelete {
+          items.remove(atOffsets: $0)
+        }
+        .onMove {
+          items.move(fromOffsets: $0, toOffset: $1)
+        }
+      }
+      .listStyle(PlainListStyle())
+      .navigationTitle("Todo List")
+//      .toolbar {
+//        EditButton()
+//          .foregroundColor(.blue)
 //      }
-      ForEach(items, id: \.self) {item in
-        RowView(item: item)
+      .toolbar {
+//        ToolbarItemGroup {
+//          EditButton()
+//            .foregroundColor(.green)
+//          NavigationLink("Add", destination: AddItemView())
+//        }
+          ToolbarItem(placement: .navigationBarLeading) {
+            HStack {
+              EditButton()
+                .foregroundColor(.pink)
+              Image(systemName: "pencil.circle")
+            }
+          }
+          ToolbarItem(placement: .navigationBarTrailing) {
+            Image(systemName: "gear.circle")
+            // NavigationLink("Add", destination: AddItemView())
+          }
       }
     }
-    .listStyle(PlainListStyle())
-    .navigationTitle("Todo List")
-    .navigationBarItems(
-      // leading: EditButton(),
-      leading: Button(
-        action: {
-          print("open");
-        },
-        label: {
-          // Image(systemName: "slider.horizontal.3")
-          Image(systemName: "button")
-            .foregroundColor(.red)
-        }
-      ),
-      trailing: Button(
-        action: {
-          print("open");
-        },
-        label: {
-          // Image(systemName: "slider.horizontal.3")
-          Image(systemName: "gear.circle")
-            .foregroundColor(.green)
-        }
-      )
-    )
-//    .navigationBarItems(
-//      leading: EditButton(),
-//      trailing: NavigationLink("Add", destination: AddItemView())
-//    )
-//    .toolbar { EditButton() }
-//    .toolbar {
-//      ToolbarItem(placement: .navigationBarTrailing) {
-//        EditButton()
-//      }
-//      ToolbarItem(placement: .navigationBarLeading) {
-//        NavigationLink("Add", destination: AddItemView())
-//      }
-//    }
-//      VStack(alignment: .leading, spacing: 10) {
-//        ForEach(items) {item in
-//          RowView(item)
-//        }
-//      }
-//      .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
   }
 }
 
 struct ListView_Previews: PreviewProvider {
   static var previews: some View {
-    NavigationView {
-      // ListView(ListData)
-      ListView()
-    }
-    .navigationTitle("Todo List")
+    // ListView(ListData)
+    ListView()
   }
 }
 

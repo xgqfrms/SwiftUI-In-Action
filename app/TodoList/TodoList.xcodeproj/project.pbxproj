@@ -17,6 +17,9 @@
 		707A996E28377C7F00E51BFF /* ListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A996D28377C7F00E51BFF /* ListData.swift */; };
 		707A99702837842400E51BFF /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A996F2837842400E51BFF /* RowView.swift */; };
 		707A99722837869700E51BFF /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A99712837869700E51BFF /* AddItemView.swift */; };
+		707A99742837CE2A00E51BFF /* EditButtonBugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A99732837CE2A00E51BFF /* EditButtonBugView.swift */; };
+		707A99762837CF4200E51BFF /* ListViewBug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A99752837CF4200E51BFF /* ListViewBug.swift */; };
+		707A99782837D14D00E51BFF /* EditButtonOK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A99772837D14D00E51BFF /* EditButtonOK.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		707A996D28377C7F00E51BFF /* ListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListData.swift; sourceTree = "<group>"; };
 		707A996F2837842400E51BFF /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		707A99712837869700E51BFF /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		707A99732837CE2A00E51BFF /* EditButtonBugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButtonBugView.swift; sourceTree = "<group>"; };
+		707A99752837CF4200E51BFF /* ListViewBug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewBug.swift; sourceTree = "<group>"; };
+		707A99772837D14D00E51BFF /* EditButtonOK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButtonOK.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,9 @@
 		707A996128377A2000E51BFF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				707A99732837CE2A00E51BFF /* EditButtonBugView.swift */,
+				707A99752837CF4200E51BFF /* ListViewBug.swift */,
+				707A99772837D14D00E51BFF /* EditButtonOK.swift */,
 				707A996428377AEE00E51BFF /* ListView.swift */,
 				707A99712837869700E51BFF /* AddItemView.swift */,
 				707A996F2837842400E51BFF /* RowView.swift */,
@@ -191,10 +200,13 @@
 				707A996728377B0D00E51BFF /* ListViewModel.swift in Sources */,
 				707A99702837842400E51BFF /* RowView.swift in Sources */,
 				707A996528377AEE00E51BFF /* ListView.swift in Sources */,
+				707A99782837D14D00E51BFF /* EditButtonOK.swift in Sources */,
 				707A996928377B5600E51BFF /* NoItemsView.swift in Sources */,
+				707A99762837CF4200E51BFF /* ListViewBug.swift in Sources */,
 				707A996B28377B9700E51BFF /* ListModel.swift in Sources */,
 				707A996E28377C7F00E51BFF /* ListData.swift in Sources */,
 				707A99722837869700E51BFF /* AddItemView.swift in Sources */,
+				707A99742837CE2A00E51BFF /* EditButtonBugView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
