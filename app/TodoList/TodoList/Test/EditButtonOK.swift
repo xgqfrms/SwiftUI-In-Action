@@ -39,6 +39,13 @@ struct EditButtonOK: View {
       //          .foregroundColor(.blue)
       //      }
       .toolbar {
+//        ToolbarItemGroup {
+//          HStack {
+//            NavigationLink("Add", destination: AddItemView())
+//            EditButton()
+//              .foregroundColor(.green)
+//          }
+//        }
         //        ToolbarItemGroup {
         //          EditButton()
         //            .foregroundColor(.green)

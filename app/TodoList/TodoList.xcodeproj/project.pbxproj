@@ -69,12 +69,13 @@
 		707A99512837753900E51BFF /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
-				707A99562837753B00E51BFF /* Assets.xcassets */,
 				707A99522837753900E51BFF /* TodoListApp.swift */,
+				707A99562837753B00E51BFF /* Assets.xcassets */,
 				707A996228377A2800E51BFF /* Models */,
 				707A996128377A2000E51BFF /* Views */,
 				707A996328377A3600E51BFF /* ViewModels */,
 				707A996C28377C5000E51BFF /* MockData */,
+				707A99792837D21000E51BFF /* Test */,
 				707A99582837753B00E51BFF /* Preview Content */,
 			);
 			path = TodoList;
@@ -91,9 +92,6 @@
 		707A996128377A2000E51BFF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				707A99732837CE2A00E51BFF /* EditButtonBugView.swift */,
-				707A99752837CF4200E51BFF /* ListViewBug.swift */,
-				707A99772837D14D00E51BFF /* EditButtonOK.swift */,
 				707A996428377AEE00E51BFF /* ListView.swift */,
 				707A99712837869700E51BFF /* AddItemView.swift */,
 				707A996F2837842400E51BFF /* RowView.swift */,
@@ -124,6 +122,16 @@
 				707A996D28377C7F00E51BFF /* ListData.swift */,
 			);
 			path = MockData;
+			sourceTree = "<group>";
+		};
+		707A99792837D21000E51BFF /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				707A99732837CE2A00E51BFF /* EditButtonBugView.swift */,
+				707A99772837D14D00E51BFF /* EditButtonOK.swift */,
+				707A99752837CF4200E51BFF /* ListViewBug.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
