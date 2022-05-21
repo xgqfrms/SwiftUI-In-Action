@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		707A994F2837753900E51BFF /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		707A994F2837753900E51BFF /* 待办事项.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "待办事项.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		707A99522837753900E51BFF /* TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApp.swift; sourceTree = "<group>"; };
 		707A99562837753B00E51BFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		707A99592837753B00E51BFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		707A99502837753900E51BFF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				707A994F2837753900E51BFF /* TodoList.app */,
+				707A994F2837753900E51BFF /* 待办事项.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,7 +136,7 @@
 			);
 			name = TodoList;
 			productName = TodoList;
-			productReference = 707A994F2837753900E51BFF /* TodoList.app */;
+			productReference = 707A994F2837753900E51BFF /* 待办事项.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -339,7 +339,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.xgqfrms.app.TodoList;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "待办事项";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -368,7 +368,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.xgqfrms.app.TodoList;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "待办事项";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

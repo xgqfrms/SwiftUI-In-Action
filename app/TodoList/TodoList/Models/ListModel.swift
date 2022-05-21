@@ -8,7 +8,7 @@
 import SwiftUI
 
 // Immutable Struct
-struct ListModel: Identifiable {
+struct ListModel: Identifiable, Codable {
   // let id: String = UUID().uuidString;
   let id: String
   let text: String
