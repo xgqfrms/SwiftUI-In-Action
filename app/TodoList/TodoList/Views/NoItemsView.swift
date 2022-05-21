@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct NoItemsView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+  var body: some View {
+    Text("暂无数据!")
+    // Text("No Items!")
+  }
 }
 
 //struct NoItemsView_Previews: PreviewProvider {

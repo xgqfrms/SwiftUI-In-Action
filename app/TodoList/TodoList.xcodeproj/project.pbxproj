@@ -17,6 +17,7 @@
 		707A996E28377C7F00E51BFF /* ListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A996D28377C7F00E51BFF /* ListData.swift */; };
 		707A99702837842400E51BFF /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A996F2837842400E51BFF /* RowView.swift */; };
 		707A99722837869700E51BFF /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A99712837869700E51BFF /* AddItemView.swift */; };
+		70B686BC2839531D007C1995 /* CustomEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B686BB2839531D007C1995 /* CustomEditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		707A996F2837842400E51BFF /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		707A99712837869700E51BFF /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 		70B686BA2839129A007C1995 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		70B686BB2839531D007C1995 /* CustomEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				707A996428377AEE00E51BFF /* ListView.swift */,
+				70B686BB2839531D007C1995 /* CustomEditView.swift */,
 				707A99712837869700E51BFF /* AddItemView.swift */,
 				707A996F2837842400E51BFF /* RowView.swift */,
 				707A996828377B5600E51BFF /* NoItemsView.swift */,
@@ -192,6 +195,7 @@
 				707A99532837753900E51BFF /* TodoListApp.swift in Sources */,
 				707A996728377B0D00E51BFF /* ListViewModel.swift in Sources */,
 				707A99702837842400E51BFF /* RowView.swift in Sources */,
+				70B686BC2839531D007C1995 /* CustomEditView.swift in Sources */,
 				707A996528377AEE00E51BFF /* ListView.swift in Sources */,
 				707A996928377B5600E51BFF /* NoItemsView.swift in Sources */,
 				707A996B28377B9700E51BFF /* ListModel.swift in Sources */,

@@ -15,8 +15,10 @@ struct TodoListApp: App {
   // let listData: [ListModel] = ListData;
   var body: some Scene {
     WindowGroup {
-       ListView()
+      CustomEditView()
         .environmentObject(listViewModel);
+//      ListView()
+//        .environmentObject(listViewModel);
       // ListView(listData);
     }
   }

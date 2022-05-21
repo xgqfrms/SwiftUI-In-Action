@@ -40,7 +40,8 @@ struct AddItemView: View {
   var body: some View {
     ScrollView {
       VStack {
-        TextField("please input your idea ...", text: $text)
+        // TextField("please input your idea ...", text: $text)
+        TextField("请输入你的想法 💡", text: $text)
           .padding(.horizontal)
           .frame(height: 55)
           .background(Color(UIColor.secondarySystemBackground))
@@ -53,7 +54,8 @@ struct AddItemView: View {
           */
           action: clickSave,
           label: {
-            Text("Save".uppercased())
+            // Text("Save".uppercased())
+            Text("保存".uppercased())
               .padding()
               .font(.headline)
               .frame(height: 55)
@@ -66,7 +68,8 @@ struct AddItemView: View {
       }
       .padding(14)
     }
-    .navigationTitle("Add Item ✍🏻")
+    .navigationTitle("添加待办事项 ✍🏻")
+    // .navigationTitle("Add Item ✍🏻")
     .alert(isPresented: $showAlert, content: getAlert)
   }
 }

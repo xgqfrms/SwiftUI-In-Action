@@ -44,10 +44,13 @@ struct ListView: View {
         */
       }
       .listStyle(PlainListStyle())
-      .navigationTitle("Todo List")
+      .navigationTitle("待办清单 📝")
+      // .navigationTitle("Todo List 📝")
+      // SwiftUI 国际化 ? language
       .navigationBarItems(
         leading: EditButton(),
-        trailing: NavigationLink("Add", destination: AddItemView())
+        trailing: NavigationLink("添加", destination: AddItemView())
+        // trailing: NavigationLink("Add", destination: AddItemView())
       )
 //      .toolbar {
 //        ToolbarItem(placement: .navigationBarLeading) {
