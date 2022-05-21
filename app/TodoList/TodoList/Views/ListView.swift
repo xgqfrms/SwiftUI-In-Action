@@ -8,22 +8,27 @@
 import SwiftUI
 
 struct ListView: View {
-//  var items: [ListModel];
-//  init(_ list: [ListModel]) {
-//    self.items = list;
-//  }
-  @State private var items: [String] = [
-    "abc",
-    "xyz",
-    "ufo",
-    "wtf"
-  ];
+  // var items: [ListModel];
+  // Cannot use mutating member on immutable value: 'self' is immutable
+  /*
+  @State var items: [ListModel];
+  init(_ list: [ListModel]) {
+    self.items = list;
+  }
+  */
+  @EnvironmentObject var listViewModel: ListViewModel;
   var body: some View {
     // 导航视图
     NavigationView {
       List {
-        ForEach(items, id: \.self) {item in
-          RowView(item: item)
+        ForEach(listViewModel.items) {item in
+          RowView(item)
+        }
+        .onDelete(perform: listViewModel.removeItem)
+        .onMove(perform: listViewModel.moveItem)
+        /*
+        ForEach(items) {item in
+          RowView(item)
         }
         .onDelete {
           items.remove(atOffsets: $0)
@@ -31,6 +36,7 @@ struct ListView: View {
         .onMove {
           items.move(fromOffsets: $0, toOffset: $1)
         }
+        */
       }
       .listStyle(PlainListStyle())
       .navigationTitle("Todo List")
@@ -59,8 +65,8 @@ struct ListView: View {
 
 struct ListView_Previews: PreviewProvider {
   static var previews: some View {
-    // ListView(ListData)
     ListView()
+    // ListView(ListData)
   }
 }
 
