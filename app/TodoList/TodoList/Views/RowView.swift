@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RowView: View {
+  @EnvironmentObject var listViewModel: ListViewModel;
   var item: ListModel;
   init(_ item: ListModel) {
     self.item = item;
@@ -24,9 +25,18 @@ struct RowView: View {
 //      Text(item)
 //      Spacer()
     }
-    .onTapGesture(perform: {
-      print("click item")
-    })
+    .font(.title2)
+    .padding(.vertical, 8)
+    // tap 事件拦截 bug
+    // .onTapGesture(perform: {
+    //   print("click item")
+    // })
+    .onTapGesture {
+      withAnimation(.linear) {
+        print("click item toggle ✅")
+        listViewModel.toggleItem(item: item)
+      }
+    }
   }
 }
 

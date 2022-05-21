@@ -31,10 +31,46 @@ class ListViewModel: ObservableObject {
     );
     items.append(listModel);
   }
-  func toggleItem (index: IndexSet) {
-//    let item = items.formIndex(index);
-//    item.completed = !item.completed;
-//    items.replace(index, item);
+  func toggleItem (item: ListModel) {
+      if let index = items.firstIndex(where: { $0.id == item.id }) {
+        // 整体替换 item
+        items[index] = item.toogleItemCompleted();
+//        items[index] = ListModel(
+//          text: item.text,
+//          completed: !item.completed
+//        );
+      }
+//    guard let index = items.firstIndex(where: { $0.id == item.id }) else {
+//      // 整体替换 item
+//      items[index] = ListModel(
+//        text: item.text,
+//        completed: !item.completed
+//      );
+//      // Cannot convert value of type '(UnsafePointer<CChar>?, Int32) -> UnsafeMutablePointer<CChar>?' (aka '(Optional<UnsafePointer<Int8>>, Int32) -> Optional<UnsafeMutablePointer<Int8>>') to expected argument type 'Int'
+//    }
+    //    item.completed = !item.completed;
+    //    items.replace(index, item);
+//    if let index = items.firstIndex {(obj) -> Bool in
+//      obj.id == item.id
+//    } {
+//      // do something
+//    }
+
+//    if let index = items.firstIndex(where: {(obj) -> Bool in
+//      obj.id == item.id
+//    }) {
+//      // do something
+//    }
+
+//    if items.firstIndex(where: {(obj) -> Bool in
+//      obj.id == item.id
+//    }) != nil {
+//      // do something
+//    }
+
+//    if let index = items.firstIndex(where: { $0.id == item.id; }) {
+//      //
+//    }
   }
 }
 

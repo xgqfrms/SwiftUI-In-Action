@@ -13,14 +13,15 @@ struct AddItemView: View {
   @Environment(\.presentationMode) var env;
   @State private var text: String = "";
   @State var showAlert: Bool = false;
-  @State var alertTitle: String = "";
+  // @State var alertTitle: String = "";
+  let alertTitle = "Your input text at least 3 characters long ❌";
   let minLength: Int = 3;
   func getAlert() -> Alert {
     return Alert(title: Text(alertTitle))
   }
   func checkInput() -> Bool {
     if(text.count < minLength) {
-      alertTitle = "Your input text at least 3 characters long ❌";
+      // alertTitle = "Your input text at least 3 characters long ❌";
       showAlert.toggle()
       return false
     }

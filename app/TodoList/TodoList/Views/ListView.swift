@@ -23,6 +23,11 @@ struct ListView: View {
       List {
         ForEach(listViewModel.items) {item in
           RowView(item)
+//            .onTapGesture {
+//              withAnimation(.linear) {
+//                listViewModel.toggleItem(item: item)
+//              }
+//            }
         }
         .onDelete(perform: listViewModel.deleteItem)
         .onMove(perform: listViewModel.moveItem)
