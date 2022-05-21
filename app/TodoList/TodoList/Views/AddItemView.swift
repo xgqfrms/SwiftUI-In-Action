@@ -11,15 +11,13 @@ struct AddItemView: View {
   @State private var input: String = "";
   @State var showAlert: Bool = false;
   @State var alertTitle: String = "";
-  // var alertTitle: String = "";
+  let minLength: Int = 3;
   func getAlert() -> Alert {
     return Alert(title: Text(alertTitle))
   }
   func checkInput() -> Bool {
-    if(input.count < 3) {
+    if(input.count < minLength) {
       alertTitle = "Your input text at least 3 characters long ❌";
-      // Cannot assign to property: 'self' is immutable
-      // Mark method 'mutating' to make 'self' mutable
       showAlert.toggle()
       return false
     }
@@ -27,7 +25,9 @@ struct AddItemView: View {
   }
   func clickSave() {
     if(checkInput()) {
-      //
+      print("save success ✅")
+    } else {
+      print("save error ❌")
     }
   }
   var body: some View {
@@ -40,7 +40,6 @@ struct AddItemView: View {
           .cornerRadius(10)
         Button(
           action: {
-            print("save input")
             clickSave();
           },
           label: {
