@@ -24,7 +24,7 @@ struct ListView: View {
         ForEach(listViewModel.items) {item in
           RowView(item)
         }
-        .onDelete(perform: listViewModel.removeItem)
+        .onDelete(perform: listViewModel.deleteItem)
         .onMove(perform: listViewModel.moveItem)
         /*
         ForEach(items) {item in
