@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct AddItemView: View {
-  @State private var input: String = "";
+  @EnvironmentObject var listViewModel: ListViewModel;
+  // @Environment(\.presentationMode) var presentationMode;
+  @Environment(\.presentationMode) var env;
+  @State private var text: String = "";
   @State var showAlert: Bool = false;
   @State var alertTitle: String = "";
   let minLength: Int = 3;
@@ -16,7 +19,7 @@ struct AddItemView: View {
     return Alert(title: Text(alertTitle))
   }
   func checkInput() -> Bool {
-    if(input.count < minLength) {
+    if(text.count < minLength) {
       alertTitle = "Your input text at least 3 characters long ❌";
       showAlert.toggle()
       return false
@@ -26,6 +29,9 @@ struct AddItemView: View {
   func clickSave() {
     if(checkInput()) {
       print("save success ✅")
+      listViewModel.addItem(text);
+      // 返回列表视图
+      env.wrappedValue.dismiss();
     } else {
       print("save error ❌")
     }
@@ -33,15 +39,18 @@ struct AddItemView: View {
   var body: some View {
     ScrollView {
       VStack {
-        TextField("please input your idea ...", text: $input)
+        TextField("please input your idea ...", text: $text)
           .padding(.horizontal)
           .frame(height: 55)
           .background(Color(UIColor.secondarySystemBackground))
           .cornerRadius(10)
         Button(
+          /*
           action: {
             clickSave();
           },
+          */
+          action: clickSave,
           label: {
             Text("Save".uppercased())
               .padding()

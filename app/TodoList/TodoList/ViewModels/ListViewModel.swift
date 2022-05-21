@@ -18,19 +18,23 @@ class ListViewModel: ObservableObject {
     items.append(contentsOf: listData);
   }
   // 封装 utils function
-  /*
-  func deleteItem (indexSet: IndexSet) {
-    items.remove(atOffsets: indexSet);
-  }
-  func moveItem (from: IndexSet, to: Int) {
-    items.move(fromOffsets: from, toOffset: to);
-  }
-   */
   func deleteItem (index: IndexSet) {
     items.remove(atOffsets: index);
   }
   func moveItem (fromIndex: IndexSet, toIndex: Int) {
     items.move(fromOffsets: fromIndex, toOffset: toIndex);
+  }
+  func addItem (_ text: String) {
+    let listModel = ListModel(
+      text: text,
+      completed: false
+    );
+    items.append(listModel);
+  }
+  func toggleItem (index: IndexSet) {
+//    let item = items.formIndex(index);
+//    item.completed = !item.completed;
+//    items.replace(index, item);
   }
 }
 

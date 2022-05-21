@@ -8,21 +8,21 @@
 import SwiftUI
 
 struct RowView: View {
-//  var item: ListModel;
-//  init(_ item: ListModel) {
-//    self.item = item;
-//  }
-  var item: String;
+  var item: ListModel;
+  init(_ item: ListModel) {
+    self.item = item;
+  }
+//  var item: String;
   var body: some View {
     HStack {
-//      Image(systemName: item.completed ? "checkmark.circle" : "circle")
-//        .foregroundColor((item.completed ? .green : .red))
-//      Text(item.text)
-//      Spacer()
-      Image(systemName: "checkmark.circle")
-        .foregroundColor(.green)
-      Text(item)
+      Image(systemName: item.completed ? "checkmark.circle" : "circle")
+        .foregroundColor((item.completed ? .green : .red))
+      Text(item.text)
       Spacer()
+//      Image(systemName: "checkmark.circle")
+//        .foregroundColor(.green)
+//      Text(item)
+//      Spacer()
     }
     .onTapGesture(perform: {
       print("click item")

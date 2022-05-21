@@ -9,13 +9,15 @@ import SwiftUI
 
 @main
 struct TodoListApp: App {
+  // 实例化 ViewModel
+  @StateObject var listViewModel: ListViewModel = ListViewModel();
   // mock data
-  let listData: [ListModel] = ListData;
+  // let listData: [ListModel] = ListData;
   var body: some Scene {
     WindowGroup {
+       ListView()
+        .environmentObject(listViewModel);
       // ListView(listData);
-      ListView();
-      // EditButtonBugView();
     }
   }
 }
