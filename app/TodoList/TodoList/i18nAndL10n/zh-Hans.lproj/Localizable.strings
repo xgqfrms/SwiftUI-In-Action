@@ -16,3 +16,4 @@
 "Placeholder" = "请输入你的想法 💡...";
 "AddItem" = "添加待办事项 ✍🏻";
 "AlertText" = "请输入至少 3 个字符长 ❌";
+"NoItem" = "暂无数据!";

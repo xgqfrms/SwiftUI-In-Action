@@ -9,8 +9,7 @@ import SwiftUI
 
 struct NoItemsView: View {
   var body: some View {
-    Text("暂无数据!")
-    // Text("No Items!")
+     Text("NoItem")
   }
 }
 

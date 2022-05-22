@@ -13,28 +13,19 @@ struct RowView: View {
   init(_ item: ListModel) {
     self.item = item;
   }
-//  var item: String;
   var body: some View {
     HStack {
       Image(systemName: item.completed ? "checkmark.circle" : "circle")
         .foregroundColor((item.completed ? .green : .red))
       Text(item.text)
       Spacer()
-//      Image(systemName: "checkmark.circle")
-//        .foregroundColor(.green)
-//      Text(item)
-//      Spacer()
     }
     .font(.title2)
     .padding(.vertical, 8)
-    // tap 事件拦截 bug
-    // .onTapGesture(perform: {
-    //   print("click item")
-    // })
     .onTapGesture {
       withAnimation(.linear) {
-        print("click item toggle ✅")
         listViewModel.toggleItem(item: item)
+        // print("click item toggle ✅")
       }
     }
   }
