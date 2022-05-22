@@ -16,7 +16,10 @@ struct TodoListApp: App {
   var body: some Scene {
     WindowGroup {
       CustomEditView()
-        .environmentObject(listViewModel);
+        .environmentObject(listViewModel)
+        // .environment(\.locale, .init(identifier: "en"));
+        // .environment(\.locale, .init(identifier: "en-US"));
+        // .environment(\.locale, .init(identifier: "zh-Hans"));
 //      ListView()
 //        .environmentObject(listViewModel);
       // ListView(listData);

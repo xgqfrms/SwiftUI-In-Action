@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  TodoList
+
+  Created by 夏凌晨 on 2022/5/22.
+  
+*/
+
+// validation failed: Couldn't parse property list because the input data was in an invalid format
+// missing semi-colons bug ❌
+// "TodoList" = "Todo List 📝"
+
+"TodoList" = "Todo List 📝";

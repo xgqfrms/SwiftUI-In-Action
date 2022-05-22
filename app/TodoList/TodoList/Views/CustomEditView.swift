@@ -30,7 +30,9 @@ struct CustomEditView: View {
       }
       .environment(\.editMode, $editMode)
       .listStyle(PlainListStyle())
-      .navigationTitle("待办清单 📝")
+      .navigationTitle(String(localized: "TodoList"))
+      // .navigationTitle(NSLocalizedString("TodoList", comment: "todo list comment!"))
+      // .navigationTitle("待办清单 📝")
       // .navigationTitle("Todo List 📝")
       // SwiftUI 国际化 ? language
       // NSLocalizedString(<#T##key: String##String#>, comment: <#T##String#>)
