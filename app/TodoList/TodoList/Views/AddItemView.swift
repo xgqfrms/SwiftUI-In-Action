@@ -10,7 +10,8 @@ import SwiftUI
 struct AddItemView: View {
   @EnvironmentObject var listViewModel: ListViewModel;
   // @Environment(\.presentationMode) var presentationMode;
-  @Environment(\.presentationMode) var env;
+  // @Environment(\.presentationMode) var env;
+  @Environment(\.presentationMode) var env: Binding<PresentationMode>
   @State private var text: String = "";
   @State var showAlert: Bool = false;
   // @State var alertTitle: String = "";
@@ -36,6 +37,37 @@ struct AddItemView: View {
     } else {
       print("save error ❌")
     }
+  }
+  var customBack : some View {
+    Button(
+      action: {
+        self.env.wrappedValue.dismiss();
+      },
+      label: {
+//        HStack {
+//          Image("ic_back")
+//            .aspectRatio(contentMode: .fit)
+//            .foregroundColor(.blue)
+//          Text("返回")
+//        }
+        HStack {
+          Image(systemName: "chevron.backward")
+            // .imageScale(Image.Scale.large)
+          Text("返回")
+          // Text("待办清单")
+        }
+      }
+    )
+//    Button(action: {
+//      self.env.wrappedValue.dismiss();
+//    }) {
+//      HStack {
+//        Image("ic_back") // set image here
+//          .aspectRatio(contentMode: .fit)
+//          .foregroundColor(.white)
+//        Text("Go back")
+//      }
+//    }
   }
   var body: some View {
     ScrollView {
@@ -70,6 +102,8 @@ struct AddItemView: View {
     }
     .navigationTitle("添加待办事项 ✍🏻")
     // .navigationTitle("Add Item ✍🏻")
+    .navigationBarBackButtonHidden(true)
+    .navigationBarItems(leading: customBack)
     .alert(isPresented: $showAlert, content: getAlert)
   }
 }

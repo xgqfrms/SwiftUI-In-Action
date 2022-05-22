@@ -33,6 +33,8 @@ struct CustomEditView: View {
       .navigationTitle("待办清单 📝")
       // .navigationTitle("Todo List 📝")
       // SwiftUI 国际化 ? language
+      // NSLocalizedString(<#T##key: String##String#>, comment: <#T##String#>)
+      // String(localized: <#T##String.LocalizationValue#>)
       .navigationBarItems(
         // leading: EditButton(),
         // leading: editMode.isEditing == .active ? Text("编辑") : Text("完成"),
