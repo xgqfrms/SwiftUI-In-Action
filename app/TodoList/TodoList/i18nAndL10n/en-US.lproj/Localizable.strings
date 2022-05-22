@@ -7,3 +7,13 @@
 */
 
 "TodoList" = "🇺🇸Todo List 📝";
+"Add" = "Add";
+"Done" = "Done";
+"Edit" = "Edit";
+"Back" = "Back";
+"Save" = "Save";
+//"SAVE" = "SAVE";
+"Placeholder" = "please input your idea 💡...";
+"AddItem" = "Add Item ✍🏻";
+"AlertText" = "Please input at least 3 characters long ❌";
+

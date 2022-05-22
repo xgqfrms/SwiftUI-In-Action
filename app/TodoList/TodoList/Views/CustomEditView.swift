@@ -10,13 +10,13 @@ import SwiftUI
 struct CustomEditView: View {
   @EnvironmentObject var listViewModel: ListViewModel;
   @State private var editMode: EditMode = EditMode.inactive;
-  // @Environment(\.editMode) private var editMode;
   var body: some View {
     // 导航视图
     NavigationView {
       ZStack {
         if (listViewModel.items.isEmpty) {
           // EmptyView()
+          // 自定义 empty view
           NoItemsView()
         } else {
           List {
@@ -30,17 +30,15 @@ struct CustomEditView: View {
       }
       .environment(\.editMode, $editMode)
       .listStyle(PlainListStyle())
-      .navigationTitle(String(localized: "TodoList"))
+      // SwiftUI 国际化
+      // NSLocalizedString(<#T##key: String##String#>, comment: <#T##String#>) ✅
       // .navigationTitle(NSLocalizedString("TodoList", comment: "todo list comment!"))
-      // .navigationTitle("待办清单 📝")
-      // .navigationTitle("Todo List 📝")
-      // SwiftUI 国际化 ? language
-      // NSLocalizedString(<#T##key: String##String#>, comment: <#T##String#>)
-      // String(localized: <#T##String.LocalizationValue#>)
+      // String(localized: <#T##String.LocalizationValue#>) ✅
+      .navigationTitle(String(localized: "TodoList"))
       .navigationBarItems(
         // leading: EditButton(),
-        // leading: editMode.isEditing == .active ? Text("编辑") : Text("完成"),
-        leading: Button(editMode.isEditing ? "完成": "编辑") {
+        // 自定义 edit button
+        leading: Button(editMode.isEditing ? "Done": "Edit") {
           switch editMode {
             case .active:
               self.editMode = .inactive
@@ -50,21 +48,8 @@ struct CustomEditView: View {
               break
           }
         },
-        trailing: NavigationLink("添加", destination: AddItemView())
-        // trailing: NavigationLink("Add", destination: AddItemView())
+        trailing: NavigationLink("Add", destination: AddItemView())
       )
-//      .toolbar {
-//        Button(editMode.isEditing ? "完成": "编辑") {
-//          switch editMode {
-//            case .active:
-//              self.editMode = .inactive
-//            case .inactive:
-//              self.editMode = .active
-//            default:
-//              break
-//          }
-//        }
-//      }
     }
   }
 }
