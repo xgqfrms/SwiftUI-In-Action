@@ -14,6 +14,8 @@ struct TodoListApp: App {
   var body: some Scene {
     WindowGroup {
       CustomEditView()
+        // 适配 iPad 宽屏幕 ✅
+        .navigationViewStyle(StackNavigationViewStyle())
         .environmentObject(listViewModel)
         // .environment(\.locale, .init(identifier: "en"));
         // .environment(\.locale, .init(identifier: "en-US"));
