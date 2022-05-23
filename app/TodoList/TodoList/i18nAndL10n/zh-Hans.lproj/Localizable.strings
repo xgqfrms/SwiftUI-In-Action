@@ -15,5 +15,7 @@
 //"SAVE" = "保存";
 "Placeholder" = "请输入你的想法 💡...";
 "AddItem" = "添加待办事项 ✍🏻";
-"AlertText" = "请输入至少 3 个字符长 ❌";
+"AlertText" = "⏰ 请输入至少 3 个字符长";
 "NoItem" = "暂无数据!";
+"NoItemDesc" = "🎯 尝试添加一些你今天应该完成的项目!";
+"GoToAdd" = "跳转到添加";

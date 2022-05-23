@@ -19,5 +19,7 @@
 //"SAVE" = "SAVE";
 "Placeholder" = "please input your idea 💡...";
 "AddItem" = "Add Item ✍🏻";
-"AlertText" = "Please input at least 3 characters long ❌";
+"AlertText" = "⏰ Please input at least 3 characters long";
 "NoItem" = "No Items!";
+"NoItemDesc" = "🎯 Try to add some items which you should finish today!";
+"GoToAdd" = "Go To Add";
