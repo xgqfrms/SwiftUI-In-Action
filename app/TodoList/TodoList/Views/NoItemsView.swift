@@ -9,6 +9,7 @@ import SwiftUI
 
 struct NoItemsView: View {
   @State private var animate: Bool = false;
+  private let SecondAccentColor = Color("SecondAccentColor");
   func autoAnimate() {
     // delay 1.5s
     DispatchQueue.main.asyncAfter(
@@ -51,17 +52,16 @@ struct NoItemsView: View {
               .frame(height: 55)
               .frame(maxWidth: .infinity)
               .foregroundColor(.white)
-              .background(animate ? Color.blue : Color.pink)
-              // .background(Color.accentColor)
+              .background(animate ? .accentColor : SecondAccentColor)
               .cornerRadius(10)
               .padding(.horizontal, animate ? 30 : 50)
               .scaleEffect(animate ? 1.1 : 1.0)
-              .offset(y: animate ? 10 : 0)
+              .offset(y: animate ? 20 : 10)
               .shadow(
-                color: animate ? .blue.opacity(0.7) : .pink.opacity(0.3),
+                color: animate ? .accentColor.opacity(0.7) : SecondAccentColor.opacity(0.3),
                 radius: animate ? 20 : 10,
                 x: 0,
-                y: animate ? 20 : 10)
+                y: animate ? 20 : 30)
           }
         )
       }

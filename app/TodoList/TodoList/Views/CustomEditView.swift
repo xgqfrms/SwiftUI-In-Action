@@ -18,6 +18,9 @@ struct CustomEditView: View {
           // EmptyView()
           // 自定义 empty view
           NoItemsView()
+            .transition(
+              AnyTransition.opacity.animation(.easeIn)
+            )
         } else {
           List {
             ForEach(listViewModel.items) {item in
