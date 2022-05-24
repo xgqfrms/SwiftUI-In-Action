@@ -17,7 +17,8 @@ struct SettingView: View {
         .frame(width: 100, height: 100, alignment: .center)
         .shadow(color: .pink, radius: 8, x: 0, y: 4)
       // Form
-      SettingForm();
+      SettingForm()
+        .padding(.vertical, 20)
     }
     .padding()
     .frame(maxWidth: 640)
