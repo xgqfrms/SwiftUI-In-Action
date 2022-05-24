@@ -58,7 +58,7 @@ struct AddItemView: View {
         TextField("Placeholder", text: $text)
           .padding(.horizontal)
           .frame(height: 55)
-          // UIColor 自带透明度
+          // SettingForm 自带透明度
           .background(Color(UIColor.secondarySystemBackground))
           .cornerRadius(10)
         Button(

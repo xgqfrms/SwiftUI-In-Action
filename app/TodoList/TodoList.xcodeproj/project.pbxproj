@@ -23,6 +23,8 @@
 		70B686CD283A845A007C1995 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70B686CB283A845A007C1995 /* Localizable.strings */; };
 		70B686CF283BDF4B007C1995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70B686CE283BDF4B007C1995 /* LaunchScreen.storyboard */; };
 		70B686D1283C79EB007C1995 /* LaunchScreen_zh-Hans.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70B686D0283C79EB007C1995 /* LaunchScreen_zh-Hans.storyboard */; };
+		70B686DB283C8BC5007C1995 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B686DA283C8BC5007C1995 /* SettingView.swift */; };
+		70B686DD283C8EBD007C1995 /* SettingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B686DC283C8EBD007C1995 /* SettingForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		70B686CE283BDF4B007C1995 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70B686D0283C79EB007C1995 /* LaunchScreen_zh-Hans.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "LaunchScreen_zh-Hans.storyboard"; sourceTree = "<group>"; };
 		70B686D2283C7C61007C1995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		70B686DA283C8BC5007C1995 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		70B686DC283C8EBD007C1995 /* SettingForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				707A99712837869700E51BFF /* AddItemView.swift */,
 				707A996F2837842400E51BFF /* RowView.swift */,
 				707A996828377B5600E51BFF /* NoItemsView.swift */,
+				70B686DA283C8BC5007C1995 /* SettingView.swift */,
+				70B686DC283C8EBD007C1995 /* SettingForm.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -249,8 +255,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				707A99532837753900E51BFF /* TodoListApp.swift in Sources */,
+				70B686DB283C8BC5007C1995 /* SettingView.swift in Sources */,
 				707A996728377B0D00E51BFF /* ListViewModel.swift in Sources */,
 				707A99702837842400E51BFF /* RowView.swift in Sources */,
+				70B686DD283C8EBD007C1995 /* SettingForm.swift in Sources */,
 				70B686BC2839531D007C1995 /* CustomEditView.swift in Sources */,
 				707A996528377AEE00E51BFF /* ListView.swift in Sources */,
 				707A996928377B5600E51BFF /* NoItemsView.swift in Sources */,
