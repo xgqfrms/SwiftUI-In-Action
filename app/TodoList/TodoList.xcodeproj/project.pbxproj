@@ -22,6 +22,7 @@
 		70B686C7283A8092007C1995 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70B686C5283A8092007C1995 /* Localizable.strings */; };
 		70B686CD283A845A007C1995 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70B686CB283A845A007C1995 /* Localizable.strings */; };
 		70B686CF283BDF4B007C1995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70B686CE283BDF4B007C1995 /* LaunchScreen.storyboard */; };
+		70B686D1283C79EB007C1995 /* LaunchScreen_zh-Hans.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70B686D0283C79EB007C1995 /* LaunchScreen_zh-Hans.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		70B686C6283A8092007C1995 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = Localizable.strings; sourceTree = "<group>"; };
 		70B686CC283A845A007C1995 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = Localizable.strings; sourceTree = "<group>"; };
 		70B686CE283BDF4B007C1995 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70B686D0283C79EB007C1995 /* LaunchScreen_zh-Hans.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "LaunchScreen_zh-Hans.storyboard"; sourceTree = "<group>"; };
+		70B686D2283C7C61007C1995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +78,10 @@
 		707A99512837753900E51BFF /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				70B686D2283C7C61007C1995 /* Info.plist */,
 				707A99522837753900E51BFF /* TodoListApp.swift */,
 				70B686CE283BDF4B007C1995 /* LaunchScreen.storyboard */,
+				70B686D0283C79EB007C1995 /* LaunchScreen_zh-Hans.storyboard */,
 				707A99562837753B00E51BFF /* Assets.xcassets */,
 				70B686BD283A7DAF007C1995 /* i18nAndL10n */,
 				707A996228377A2800E51BFF /* Models */,
@@ -226,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70B686D1283C79EB007C1995 /* LaunchScreen_zh-Hans.storyboard in Resources */,
 				70B686CD283A845A007C1995 /* Localizable.strings in Resources */,
 				707A995A2837753B00E51BFF /* Preview Assets.xcassets in Resources */,
 				70B686C7283A8092007C1995 /* Localizable.strings in Resources */,
@@ -401,6 +407,7 @@
 				DEVELOPMENT_TEAM = GPGP7L32J5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TodoList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -431,6 +438,7 @@
 				DEVELOPMENT_TEAM = GPGP7L32J5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TodoList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -19,3 +19,5 @@
 "NoItem" = "暂无数据!";
 "NoItemDesc" = "🎯 尝试添加一些你今天应该完成的项目!";
 "GoToAdd" = "跳转到添加";
+// 启动屏
+"UILaunchStoryboardName" = "LaunchScreen_zh-Hans";

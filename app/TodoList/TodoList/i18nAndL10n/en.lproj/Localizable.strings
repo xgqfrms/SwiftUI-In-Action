@@ -23,3 +23,6 @@
 "NoItem" = "No Items!";
 "NoItemDesc" = "🎯 Try to add some items which you should finish today!";
 "GoToAdd" = "Go To Add";
+
+// 启动屏
+"UILaunchStoryboardName" = "LaunchScreen";
