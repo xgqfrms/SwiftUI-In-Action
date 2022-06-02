@@ -32,6 +32,9 @@
 		70A30D0128484DFB00A2D49E /* CoversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D0028484DFB00A2D49E /* CoversView.swift */; };
 		70A30D0328484FEB00A2D49E /* CoverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D0228484FEB00A2D49E /* CoverModel.swift */; };
 		70A30D06284850A400A2D49E /* CodableBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D05284850A400A2D49E /* CodableBundle.swift */; };
+		70A30D092848A20C00A2D49E /* PlaceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D082848A20C00A2D49E /* PlaceItemView.swift */; };
+		70A30D0B2848ABA800A2D49E /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D0A2848ABA800A2D49E /* PlaceModel.swift */; };
+		70A30D0D2848AF3100A2D49E /* PlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D0C2848AF3100A2D49E /* PlaceDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,9 @@
 		70A30D0028484DFB00A2D49E /* CoversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoversView.swift; sourceTree = "<group>"; };
 		70A30D0228484FEB00A2D49E /* CoverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverModel.swift; sourceTree = "<group>"; };
 		70A30D05284850A400A2D49E /* CodableBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundle.swift; sourceTree = "<group>"; };
+		70A30D082848A20C00A2D49E /* PlaceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceItemView.swift; sourceTree = "<group>"; };
+		70A30D0A2848ABA800A2D49E /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		70A30D0C2848AF3100A2D49E /* PlaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				70A30D0228484FEB00A2D49E /* CoverModel.swift */,
+				70A30D0A2848ABA800A2D49E /* PlaceModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,6 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				70A30D0028484DFB00A2D49E /* CoversView.swift */,
+				70A30D082848A20C00A2D49E /* PlaceItemView.swift */,
+				70A30D0C2848AF3100A2D49E /* PlaceDetailView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -283,9 +292,12 @@
 				70A30CFB28484C5900A2D49E /* VideoListView.swift in Sources */,
 				707A99172836250E00E51BFF /* ContentView.swift in Sources */,
 				707A99152836250E00E51BFF /* PlacesOfInterestApp.swift in Sources */,
+				70A30D092848A20C00A2D49E /* PlaceItemView.swift in Sources */,
 				70A30D0328484FEB00A2D49E /* CoverModel.swift in Sources */,
 				70A30D0128484DFB00A2D49E /* CoversView.swift in Sources */,
 				70A30CFD28484C6A00A2D49E /* ImageListView.swift in Sources */,
+				70A30D0D2848AF3100A2D49E /* PlaceDetailView.swift in Sources */,
+				70A30D0B2848ABA800A2D49E /* PlaceModel.swift in Sources */,
 				70A30CF928484B7500A2D49E /* PreviewView.swift in Sources */,
 				70A30CFF28484C8100A2D49E /* MapListView.swift in Sources */,
 				70A30D06284850A400A2D49E /* CodableBundle.swift in Sources */,

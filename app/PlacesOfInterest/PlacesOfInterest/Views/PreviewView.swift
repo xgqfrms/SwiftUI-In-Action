@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct PreviewView: View {
+  private let places: [PlaceModel] = Bundle.main.decode("places.json");
   var body: some View {
     NavigationView {
       List {
         CoversView()
           .frame(height: 300)
+          // 去除边距
           .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+        //
+        ForEach(places) { place in
+          PlaceItemView(place)
+            //.
+        }
       }
+      .navigationBarTitle("风景概览", displayMode: .large)
     }
   }
 }

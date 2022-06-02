@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CoversView: View {
   let covers: [CoverModel] = Bundle.main.decode("covers.json");
-  // 分页效果
+  // 分页效果 ??? swiper animation
   private let pagination = PageTabViewStyle();
   var body: some View {
     TabView {
