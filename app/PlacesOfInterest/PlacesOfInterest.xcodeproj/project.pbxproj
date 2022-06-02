@@ -164,10 +164,10 @@
 			isa = PBXGroup;
 			children = (
 				70A30CF828484B7500A2D49E /* PreviewView.swift */,
-				70A30D0028484DFB00A2D49E /* CoversView.swift */,
 				70A30CFA28484C5900A2D49E /* VideoListView.swift */,
 				70A30CFE28484C8100A2D49E /* MapListView.swift */,
 				70A30CFC28484C6A00A2D49E /* ImageListView.swift */,
+				70A30D0728485D0000A2D49E /* Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -186,6 +186,14 @@
 				70A30D05284850A400A2D49E /* CodableBundle.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		70A30D0728485D0000A2D49E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				70A30D0028484DFB00A2D49E /* CoversView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
