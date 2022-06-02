@@ -35,6 +35,9 @@
 		70A30D092848A20C00A2D49E /* PlaceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D082848A20C00A2D49E /* PlaceItemView.swift */; };
 		70A30D0B2848ABA800A2D49E /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D0A2848ABA800A2D49E /* PlaceModel.swift */; };
 		70A30D0D2848AF3100A2D49E /* PlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D0C2848AF3100A2D49E /* PlaceDetailView.swift */; };
+		70A30D0F2848F2D600A2D49E /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D0E2848F2D600A2D49E /* HeadingView.swift */; };
+		70A30D112848F5AA00A2D49E /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D102848F5AA00A2D49E /* GalleryView.swift */; };
+		70A30D132848F9B500A2D49E /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D122848F9B500A2D49E /* MessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +71,9 @@
 		70A30D082848A20C00A2D49E /* PlaceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceItemView.swift; sourceTree = "<group>"; };
 		70A30D0A2848ABA800A2D49E /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		70A30D0C2848AF3100A2D49E /* PlaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailView.swift; sourceTree = "<group>"; };
+		70A30D0E2848F2D600A2D49E /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
+		70A30D102848F5AA00A2D49E /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		70A30D122848F9B500A2D49E /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +207,9 @@
 				70A30D0028484DFB00A2D49E /* CoversView.swift */,
 				70A30D082848A20C00A2D49E /* PlaceItemView.swift */,
 				70A30D0C2848AF3100A2D49E /* PlaceDetailView.swift */,
+				70A30D102848F5AA00A2D49E /* GalleryView.swift */,
+				70A30D122848F9B500A2D49E /* MessageView.swift */,
+				70A30D0E2848F2D600A2D49E /* HeadingView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -296,11 +305,14 @@
 				70A30D0328484FEB00A2D49E /* CoverModel.swift in Sources */,
 				70A30D0128484DFB00A2D49E /* CoversView.swift in Sources */,
 				70A30CFD28484C6A00A2D49E /* ImageListView.swift in Sources */,
+				70A30D112848F5AA00A2D49E /* GalleryView.swift in Sources */,
 				70A30D0D2848AF3100A2D49E /* PlaceDetailView.swift in Sources */,
+				70A30D132848F9B500A2D49E /* MessageView.swift in Sources */,
 				70A30D0B2848ABA800A2D49E /* PlaceModel.swift in Sources */,
 				70A30CF928484B7500A2D49E /* PreviewView.swift in Sources */,
 				70A30CFF28484C8100A2D49E /* MapListView.swift in Sources */,
 				70A30D06284850A400A2D49E /* CodableBundle.swift in Sources */,
+				70A30D0F2848F2D600A2D49E /* HeadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

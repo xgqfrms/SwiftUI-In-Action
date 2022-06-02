@@ -15,24 +15,48 @@ struct PlaceDetailView: View {
   var body: some View {
     ScrollView(.vertical, showsIndicators: false) {
       VStack(alignment: .center, spacing: 20) {
+        Image(place.image)
+          .resizable()
+          .scaledToFit()
         Text(place.name)
+          .font(.largeTitle)
+          .fontWeight(.heavy)
+          .multilineTextAlignment(.center)
+          .padding(.vertical, 8)
+          .foregroundColor(.primary)
+          .background(
+            // 下划线
+            Color.accentColor
+              .frame(height: 6)
+              .offset(y: 24)
+          )
         Text(place.headline)
-        Text(place.description)
-        Text(place.name)
-        Text(place.link)
-        Text(place.image)
-        Text(place.name)
-        ForEach(place.gallery, id: \.self) {gallery in
-          Text(gallery)
+          .font(.headline)
+          .multilineTextAlignment(.leading)
+          .foregroundColor(.accentColor)
+          .padding(.horizontal)
+        Group {
+          HeadingView("中国名胜古迹 图片", "photo.on.rectangle.angled")
+          GalleryView(place.gallery)
         }
-        ForEach(place.message, id: \.self) {message in
-          Text(message)
+        .padding(.horizontal)
+        Group {
+          HeadingView("你知道吗", "questionmark.circle")
+          MessageView(place.message)
         }
-        // Referencing initializer 'init(_:content:)' on 'ForEach' requires that 'String' conform to 'Identifiable'
-        // id: \.self
+        .padding(.horizontal)
+        Group {
+          HeadingView("关于 \(place.name)", "info.circle")
+          Text(place.description)
+            .multilineTextAlignment(.leading)
+            .layoutPriority(1)
+        }
+        .padding(.horizontal)
+        // Text(place.link)
       }
     }
     .navigationBarTitle("了解更多 \(place.name)", displayMode: .inline)
+    // .edgesIgnoringSafeArea(.all)
   }
 }
 
@@ -41,5 +65,6 @@ struct PlaceDetailView_Previews: PreviewProvider {
   static var previews: some View {
     PlaceDetailView(places[0])
       .previewDevice("iPhone 12 Pro")
+      .preferredColorScheme(.dark)
   }
 }

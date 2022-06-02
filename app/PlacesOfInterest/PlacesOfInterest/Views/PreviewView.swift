@@ -16,13 +16,15 @@ struct PreviewView: View {
           .frame(height: 300)
           // 去除边距
           .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-        //
         ForEach(places) { place in
-          PlaceItemView(place)
-            //.
+          // 详情路由
+          NavigationLink(destination: PlaceDetailView(place)) {
+            PlaceItemView(place)
+          }
         }
       }
       .navigationBarTitle("风景概览", displayMode: .large)
+      // .navigationBarTitle("风景概览", displayMode: .inline)
     }
   }
 }
