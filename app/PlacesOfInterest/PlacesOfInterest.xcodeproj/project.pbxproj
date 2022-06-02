@@ -38,6 +38,8 @@
 		70A30D0F2848F2D600A2D49E /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D0E2848F2D600A2D49E /* HeadingView.swift */; };
 		70A30D112848F5AA00A2D49E /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D102848F5AA00A2D49E /* GalleryView.swift */; };
 		70A30D132848F9B500A2D49E /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D122848F9B500A2D49E /* MessageView.swift */; };
+		70A30D15284914E800A2D49E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D14284914E800A2D49E /* MapView.swift */; };
+		70A30D172849196900A2D49E /* WikiLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D162849196900A2D49E /* WikiLinkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,8 @@
 		70A30D0E2848F2D600A2D49E /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
 		70A30D102848F5AA00A2D49E /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		70A30D122848F9B500A2D49E /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		70A30D14284914E800A2D49E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		70A30D162849196900A2D49E /* WikiLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiLinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,8 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				70A30CF828484B7500A2D49E /* PreviewView.swift */,
-				70A30CFA28484C5900A2D49E /* VideoListView.swift */,
 				70A30CFE28484C8100A2D49E /* MapListView.swift */,
+				70A30CFA28484C5900A2D49E /* VideoListView.swift */,
 				70A30CFC28484C6A00A2D49E /* ImageListView.swift */,
 				70A30D0728485D0000A2D49E /* Components */,
 			);
@@ -206,6 +210,8 @@
 			children = (
 				70A30D0028484DFB00A2D49E /* CoversView.swift */,
 				70A30D082848A20C00A2D49E /* PlaceItemView.swift */,
+				70A30D14284914E800A2D49E /* MapView.swift */,
+				70A30D162849196900A2D49E /* WikiLinkView.swift */,
 				70A30D0C2848AF3100A2D49E /* PlaceDetailView.swift */,
 				70A30D102848F5AA00A2D49E /* GalleryView.swift */,
 				70A30D122848F9B500A2D49E /* MessageView.swift */,
@@ -299,8 +305,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				70A30CFB28484C5900A2D49E /* VideoListView.swift in Sources */,
+				70A30D15284914E800A2D49E /* MapView.swift in Sources */,
 				707A99172836250E00E51BFF /* ContentView.swift in Sources */,
 				707A99152836250E00E51BFF /* PlacesOfInterestApp.swift in Sources */,
+				70A30D172849196900A2D49E /* WikiLinkView.swift in Sources */,
 				70A30D092848A20C00A2D49E /* PlaceItemView.swift in Sources */,
 				70A30D0328484FEB00A2D49E /* CoverModel.swift in Sources */,
 				70A30D0128484DFB00A2D49E /* CoversView.swift in Sources */,

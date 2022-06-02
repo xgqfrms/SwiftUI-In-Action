@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MapListView: View {
   var body: some View {
-    Text("风景地图")
+    Text("风景地图 🇨🇳")
   }
 }
 

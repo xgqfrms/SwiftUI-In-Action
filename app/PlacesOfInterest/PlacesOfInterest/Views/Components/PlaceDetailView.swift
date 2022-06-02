@@ -36,7 +36,7 @@ struct PlaceDetailView: View {
           .foregroundColor(.accentColor)
           .padding(.horizontal)
         Group {
-          HeadingView("中国名胜古迹 图片", "photo.on.rectangle.angled")
+          HeadingView("名胜古迹-图片", "photo.on.rectangle.angled")
           GalleryView(place.gallery)
         }
         .padding(.horizontal)
@@ -52,7 +52,19 @@ struct PlaceDetailView: View {
             .layoutPriority(1)
         }
         .padding(.horizontal)
-        // Text(place.link)
+        Group {
+          HeadingView("名胜古迹-地图", "map")
+          MapView()
+        }
+        .padding(.horizontal)
+        Group {
+          HeadingView("名胜古迹-WiKi", "books.vertical")
+          WikiLinkView(
+            place.link,
+            place.name
+          )
+        }
+        .padding(.horizontal)
       }
     }
     .navigationBarTitle("了解更多 \(place.name)", displayMode: .inline)
@@ -65,6 +77,6 @@ struct PlaceDetailView_Previews: PreviewProvider {
   static var previews: some View {
     PlaceDetailView(places[0])
       .previewDevice("iPhone 12 Pro")
-      .preferredColorScheme(.dark)
+      // .preferredColorScheme(.dark)
   }
 }
