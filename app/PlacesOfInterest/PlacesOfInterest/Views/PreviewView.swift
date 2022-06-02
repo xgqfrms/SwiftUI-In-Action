@@ -9,9 +9,12 @@ import SwiftUI
 
 struct PreviewView: View {
   var body: some View {
-    Text("风景概览")
-    VStack {
-      CoversView();
+    NavigationView {
+      List {
+        CoversView()
+          .frame(height: 300)
+          .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+      }
     }
   }
 }

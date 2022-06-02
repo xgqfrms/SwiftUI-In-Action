@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct CoversView: View {
+  let covers: [CoverModel] = Bundle.main.decode("covers.json");
   // 分页效果
   private let pagination = PageTabViewStyle();
   var body: some View {
     TabView {
-      ForEach(0..<5) {item in
-        Image("封面-万里长城")
+      ForEach(covers) {cover in
+        Image(cover.name)
           .resizable()
-          .scaledToFit()
+          .scaledToFill()
       }
-      .tabViewStyle(pagination)
     }
+    // TabView
+    .tabViewStyle(pagination)
   }
 }
 
