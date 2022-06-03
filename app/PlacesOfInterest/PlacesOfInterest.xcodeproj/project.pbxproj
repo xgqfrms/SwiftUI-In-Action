@@ -43,6 +43,9 @@
 		70A30D19284A3BD500A2D49E /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D18284A3BD400A2D49E /* VideoModel.swift */; };
 		70A30D1B284A3C1100A2D49E /* VideoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D1A284A3C1100A2D49E /* VideoItemView.swift */; };
 		70A30D1D284A404C00A2D49E /* VideoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D1C284A404C00A2D49E /* VideoDetailView.swift */; };
+		70A30D1F284A440F00A2D49E /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D1E284A440F00A2D49E /* VideoPlayerView.swift */; };
+		70A30D22284A45AA00A2D49E /* VideoPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D21284A45AA00A2D49E /* VideoPlayerHelper.swift */; };
+		70A30D24284A649100A2D49E /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D23284A649100A2D49E /* LocationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +87,9 @@
 		70A30D18284A3BD400A2D49E /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		70A30D1A284A3C1100A2D49E /* VideoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoItemView.swift; sourceTree = "<group>"; };
 		70A30D1C284A404C00A2D49E /* VideoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailView.swift; sourceTree = "<group>"; };
+		70A30D1E284A440F00A2D49E /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		70A30D21284A45AA00A2D49E /* VideoPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerHelper.swift; sourceTree = "<group>"; };
+		70A30D23284A649100A2D49E /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 			children = (
 				707A9942283647CE00E51BFF /* Info.plist */,
 				707A99182836250F00E51BFF /* Assets.xcassets */,
+				70A30D20284A456900A2D49E /* Helper */,
 				70A30D042848504000A2D49E /* Extensions */,
 				707A99432836827B00E51BFF /* App */,
 				707A99442836833E00E51BFF /* Views */,
@@ -200,6 +207,7 @@
 				70A30D0228484FEB00A2D49E /* CoverModel.swift */,
 				70A30D0A2848ABA800A2D49E /* PlaceModel.swift */,
 				70A30D18284A3BD400A2D49E /* VideoModel.swift */,
+				70A30D23284A649100A2D49E /* LocationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,6 +227,7 @@
 				70A30D082848A20C00A2D49E /* PlaceItemView.swift */,
 				70A30D1A284A3C1100A2D49E /* VideoItemView.swift */,
 				70A30D1C284A404C00A2D49E /* VideoDetailView.swift */,
+				70A30D1E284A440F00A2D49E /* VideoPlayerView.swift */,
 				70A30D14284914E800A2D49E /* MapView.swift */,
 				70A30D162849196900A2D49E /* WikiLinkView.swift */,
 				70A30D0C2848AF3100A2D49E /* PlaceDetailView.swift */,
@@ -227,6 +236,14 @@
 				70A30D0E2848F2D600A2D49E /* HeadingView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		70A30D20284A456900A2D49E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				70A30D21284A45AA00A2D49E /* VideoPlayerHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +333,7 @@
 				70A30D1B284A3C1100A2D49E /* VideoItemView.swift in Sources */,
 				70A30CFB28484C5900A2D49E /* VideoListView.swift in Sources */,
 				70A30D15284914E800A2D49E /* MapView.swift in Sources */,
+				70A30D24284A649100A2D49E /* LocationModel.swift in Sources */,
 				707A99172836250E00E51BFF /* ContentView.swift in Sources */,
 				707A99152836250E00E51BFF /* PlacesOfInterestApp.swift in Sources */,
 				70A30D172849196900A2D49E /* WikiLinkView.swift in Sources */,
@@ -333,6 +351,8 @@
 				70A30CFF28484C8100A2D49E /* MapListView.swift in Sources */,
 				70A30D06284850A400A2D49E /* CodableBundle.swift in Sources */,
 				70A30D0F2848F2D600A2D49E /* HeadingView.swift in Sources */,
+				70A30D22284A45AA00A2D49E /* VideoPlayerHelper.swift in Sources */,
+				70A30D1F284A440F00A2D49E /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
