@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct PlaceModel: Codable, Identifiable {
   let id: String
   let name: String

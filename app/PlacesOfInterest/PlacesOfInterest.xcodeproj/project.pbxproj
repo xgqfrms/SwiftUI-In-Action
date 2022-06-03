@@ -40,6 +40,9 @@
 		70A30D132848F9B500A2D49E /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D122848F9B500A2D49E /* MessageView.swift */; };
 		70A30D15284914E800A2D49E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D14284914E800A2D49E /* MapView.swift */; };
 		70A30D172849196900A2D49E /* WikiLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D162849196900A2D49E /* WikiLinkView.swift */; };
+		70A30D19284A3BD500A2D49E /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D18284A3BD400A2D49E /* VideoModel.swift */; };
+		70A30D1B284A3C1100A2D49E /* VideoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D1A284A3C1100A2D49E /* VideoItemView.swift */; };
+		70A30D1D284A404C00A2D49E /* VideoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A30D1C284A404C00A2D49E /* VideoDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +81,9 @@
 		70A30D122848F9B500A2D49E /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		70A30D14284914E800A2D49E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		70A30D162849196900A2D49E /* WikiLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiLinkView.swift; sourceTree = "<group>"; };
+		70A30D18284A3BD400A2D49E /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		70A30D1A284A3C1100A2D49E /* VideoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoItemView.swift; sourceTree = "<group>"; };
+		70A30D1C284A404C00A2D49E /* VideoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +199,7 @@
 			children = (
 				70A30D0228484FEB00A2D49E /* CoverModel.swift */,
 				70A30D0A2848ABA800A2D49E /* PlaceModel.swift */,
+				70A30D18284A3BD400A2D49E /* VideoModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -210,6 +217,8 @@
 			children = (
 				70A30D0028484DFB00A2D49E /* CoversView.swift */,
 				70A30D082848A20C00A2D49E /* PlaceItemView.swift */,
+				70A30D1A284A3C1100A2D49E /* VideoItemView.swift */,
+				70A30D1C284A404C00A2D49E /* VideoDetailView.swift */,
 				70A30D14284914E800A2D49E /* MapView.swift */,
 				70A30D162849196900A2D49E /* WikiLinkView.swift */,
 				70A30D0C2848AF3100A2D49E /* PlaceDetailView.swift */,
@@ -304,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70A30D1B284A3C1100A2D49E /* VideoItemView.swift in Sources */,
 				70A30CFB28484C5900A2D49E /* VideoListView.swift in Sources */,
 				70A30D15284914E800A2D49E /* MapView.swift in Sources */,
 				707A99172836250E00E51BFF /* ContentView.swift in Sources */,
@@ -312,11 +322,13 @@
 				70A30D092848A20C00A2D49E /* PlaceItemView.swift in Sources */,
 				70A30D0328484FEB00A2D49E /* CoverModel.swift in Sources */,
 				70A30D0128484DFB00A2D49E /* CoversView.swift in Sources */,
+				70A30D1D284A404C00A2D49E /* VideoDetailView.swift in Sources */,
 				70A30CFD28484C6A00A2D49E /* ImageListView.swift in Sources */,
 				70A30D112848F5AA00A2D49E /* GalleryView.swift in Sources */,
 				70A30D0D2848AF3100A2D49E /* PlaceDetailView.swift in Sources */,
 				70A30D132848F9B500A2D49E /* MessageView.swift in Sources */,
 				70A30D0B2848ABA800A2D49E /* PlaceModel.swift in Sources */,
+				70A30D19284A3BD500A2D49E /* VideoModel.swift in Sources */,
 				70A30CF928484B7500A2D49E /* PreviewView.swift in Sources */,
 				70A30CFF28484C8100A2D49E /* MapListView.swift in Sources */,
 				70A30D06284850A400A2D49E /* CodableBundle.swift in Sources */,
