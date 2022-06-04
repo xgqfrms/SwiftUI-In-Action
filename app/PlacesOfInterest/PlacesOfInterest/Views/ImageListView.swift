@@ -9,12 +9,16 @@ import SwiftUI
 
 struct ImageListView: View {
   var body: some View {
-    Text("风景照片")
+    ScrollView {
+      Text("风景照片")
+    }
+    .frame(maxWidth: .infinity, maxHeight: .infinity)
+    .background(AnimationBackgroundView())
   }
 }
 
-//struct ImageListView_Previews: PreviewProvider {
-//  static var previews: some View {
-//    ImageListView()
-//  }
-//}
+struct ImageListView_Previews: PreviewProvider {
+  static var previews: some View {
+    ImageListView()
+  }
+}

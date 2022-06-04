@@ -19,29 +19,9 @@ struct MapView: View {
     // 跨度，中国范围
     span: MKCoordinateSpan(latitudeDelta: 60, longitudeDelta: 60)
   );
-  // ???
-  @State private var locationRegion: MKCoordinateRegion = {
-    // 中心
-    let center = CLLocationCoordinate2D(
-      latitude: 30.555624612131368,
-      longitude: 114.30381222526006
-    )
-    // 缩放
-    let span = MKCoordinateSpan(
-      latitudeDelta: 25.0,
-      longitudeDelta: 25.0
-    )
-    return MKCoordinateRegion(center: center, span: span);
-  } ();
-  //
-  private let locations: [LocationModel] = Bundle.main.decode("locations.json");
   var body: some View {
     // $var 引用类型, var 值类型
-    // Map(coordinateRegion: $region)
-    Map(coordinateRegion: $region, annotationItems: locations) { location in
-      MapPin(coordinate: location.location, tint: .accentColor)
-    }
-      // 弹层
+     Map(coordinateRegion: $region)
       .overlay(
         NavigationLink(destination: MapListView()) {
           HStack{
