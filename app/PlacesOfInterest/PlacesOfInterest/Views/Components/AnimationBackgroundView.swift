@@ -48,6 +48,8 @@ struct AnimationBackgroundView: View {
               animation
                 .speed(randomSpeed())
                 .delay(randomDelay())
+              ,
+              value: UUID()
             )
 //            .withAnimation(){
 //              animation
